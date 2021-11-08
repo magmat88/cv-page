@@ -1,0 +1,172 @@
+{
+  "header": {
+    "name": "Magdalena Matusiak",
+    "job": "Junior Frontend Developer",
+    "linkToCv": "https://drive.google.com/file/d/1HyjULycIfjQ_2xteQqrss8QA6JNB9OrP/view?usp=sharing"
+  },
+  "components": [
+    {
+      "type": "aboutMe",
+      "title": "About me",
+      "componentData": {
+        "about": "My name is Magdalena. Welcome to my CV page made in ReactJS/ TypeScript.",
+        "showCvImg": false,
+        "cvImg": "https://media-exp1.licdn.com/dms/image/C4D03AQFSwmd3z55ZXg/profile-displayphoto-shrink_400_400/0/1635438441555?e=1642032000&v=beta&t=5rkbiqME97ZKSmpAww0AX0Z3E38F0YCzVT8PaWqJZV4"
+      },
+      "ref": null
+    },
+    {
+      "type": "objective",
+      "title": "Objective",
+      "componentData": {
+        "objectiveInformation": "Over 9 years of experience in quality control in FMCG industry, where the advantages were analytical thinking, inquisitiveness and conscientiousness. Highly motivated, open-minded person. For last months intensively improved skills of web design, web development and learned software testing fundamentals. Currently I am looking for the new opportunities."
+      },
+      "ref": null
+    },
+    {
+      "type": "education",
+      "title": "Education",
+      "componentData": [
+        {
+          "degree": "Master of Engineering",
+          "university": "Wroclaw University of Technology",
+          "location": "Wroclaw",
+          "department": "Chemistry",
+          "startYear": "2007",
+          "startMonth": "October",
+          "endYear": "2012",
+          "endMonth": "July",
+          "showExtraInformation": false,
+          "extraInformation": ["Graduated with honors"]
+        },
+        {
+          "degree": "Completed certifications",
+          "university": "freeCodeCamp",
+          "location": "online",
+          "department": null,
+          "startYear": null,
+          "startMonth": null,
+          "endYear": "2021",
+          "endMonth": "July",
+          "showExtraInformation": false,
+          "extraInformation": [
+            "Responsive Web Design",
+            "JS Algorithms and componentData Structures"
+          ]
+        }
+      ],
+      "ref": null
+    },
+    {
+      "type": "workExperience",
+      "title": "Work experience",
+      "componentData": [
+        {
+          "company": "US Pharmacia",
+          "companyLogo": "https://www.uspzdrowie.pl/img/logo-word.png",
+          "title": "Analytical Chemist",
+          "department": "Quality Control",
+          "startYear": "2012",
+          "startMonth": "June",
+          "endYear": null,
+          "endMonth": null,
+          "showCompanyName": false,
+          "showCompanyLogo": false,
+          "extraInformation": "On maternity leave from February 2021 to present",
+          "showResponsibilities": false,
+          "responsibilities": [
+            "Performed and documented chemical analysis of raw materials, reported results with SAP",
+            "Performed implementation and validation of analytical methods",
+            "Created and updated internal standard operation procedures, instructions and guides",
+            "Participated in OOS results investigations, determined root causes and corrective actions",
+            "Developed calibrations and configured routine measurement applications in NIRCal and NIRWare chemometric software suite"
+          ],
+          "keywordsResponsibilities": [
+            "Reporting results",
+            "Validations",
+            "Creating and working with documentation",
+            "Lean management tools in practice",
+            "Calibrations in chemometric software"
+          ]
+        }
+      ],
+      "ref": null
+    },
+    {
+      "type": "skills",
+      "title": "Skills",
+      "componentData": [
+        {
+          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "skillName": "JavaScript",
+          "extraInformation": null
+        },
+        {
+          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "skillName": "HTML5",
+          "extraInformation": null
+        },
+        {
+          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "skillName": "CSS",
+          "extraInformation": null
+        },
+        {
+          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "skillName": "SASS",
+          "extraInformation": null
+        },
+        {
+          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "skillName": "GIT",
+          "extraInformation": null
+        },
+        {
+          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "skillName": "TypeScript",
+          "extraInformation": null
+        },
+        {
+          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "skillName": "ReactJS",
+          "extraInformation": null
+        },
+        {
+          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "skillName": "Software Testing Fundamentals",
+          "extraInformation": null
+        },
+        {
+          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "skillName": "Lean Management Tools",
+          "extraInformation": "5Why, Ishikawa Diagram"
+        },
+        {
+          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "skillName": "English",
+          "extraInformation": "B2 - ACERT Academic Certificate"
+        },
+        {
+          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "skillName": "Good interpersonal skills",
+          "extraInformation": null
+        },
+        {
+          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "skillName": "Working under pressure",
+          "extraInformation": null
+        }
+      ],
+      "ref": null
+    },
+    {
+      "type": "contact",
+      "title": "Contact",
+      "componentData": {
+        "github": "https://github.com/magmat88",
+        "linkedIn": "https://www.linkedin.com/in/magdalena-matusiak-330072a6"
+      },
+      "ref": null
+    }
+  ]
+}

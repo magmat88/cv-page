@@ -1,0 +1,231 @@
+// =============== Constants ==============
+
+$customLight: rgb(224, 222, 222);
+$customLightGrey: #c9c8c6;
+$customGrey: #403d39;
+$customMiddleGrey: #53514f;
+$customDarkGrey: #252422;
+$customOrange: #ff7d04;
+$customLightOrange: #fca607;
+
+// =============== Mixins =================
+
+@mixin btnEffect {
+    border: {
+        color: $customOrange;
+        width: 1px;
+        style: solid;
+    }
+    padding: 10px;
+    background-color: $customLightGrey;
+    margin: 35px;
+    &:hover {
+        padding: 14px;
+        background-color: $customGrey;
+        color: white;
+        margin: 30px;
+        border: {
+            width: 2px;
+        }
+    }
+}
+@mixin shadowEffect {
+    box-shadow: 5px 5px 10px $customGrey;
+}
+@mixin flexCenteredColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin showHide {
+    .show {
+        display: block;
+    }
+    .hide {
+        display: none;
+    }
+}
+@mixin flexCenteredRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flexSpaceBetweenColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+// =============== Styles =================
+
+.styledApp {
+    background-color: $customLightGrey;
+    margin: 0px;
+    padding: 0px;
+    @include flexCenteredColumn;
+    header {
+        position: fixed;
+        background-image: url("https://images.unsplash.com/photo-1550895030-823330fc2551?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80");
+        height: 110px;
+        width: 100%;
+        top: 0px;
+        z-index: 5;
+    }
+    // nav {
+    //     @include flex-row;
+    //     width: 100%;
+    //     justify-content: space-around;
+    //     margin-bottom: 15px;
+    // }
+    .styledHeader {
+        background: $customDarkGrey;
+        padding: 5px;
+        @include flexSpaceBetweenColumn;
+        justify-content: space-between;
+        .headerItem {
+            @include flex-row;
+            width: 100%;
+            height: 100px;
+            justify-content: space-between;
+            .nameItem {
+                @include flex-row;
+                justify-content: space-around;
+                width: 80%;
+                padding: 30px;
+                h2 {
+                    font-size: 2em;
+                    color: $customOrange;
+                    @include flexCenteredRow;
+                }
+                p {
+                    font-size: 0.9em;
+                    color: $customLightGrey;
+                    @include flexCenteredRow;
+                }
+            }
+            .cvBtn {
+                @include flexCenteredColumn;
+                width: 20%;
+            }
+        }
+        .navItem {
+            @include flexCenteredRow;
+            width: 100%;
+        }
+    }
+    main {
+        position: relative;
+        top: 200px;
+        margin: 0px;
+        padding: 0px;
+    }
+    p {
+        padding: 20px;
+    }
+    .btn {
+        @include btnEffect;
+        background-color: $customLightOrange;
+        color: $customDarkGrey;
+        @include shadowEffect;
+        &:hover {
+            background-color: $customOrange;
+        }
+    }
+    .navBtn {
+        border: {
+            color: $customOrange;
+            width: 1px;
+            style: solid;
+        }
+        padding: 8px;
+        // width: 15%;
+        color: $customOrange;
+        background-color: $customGrey;
+        margin: 5px;
+        &:hover {
+            padding: 12px;
+            background-color: $customGrey;
+            color: white;
+            margin: 0px;
+            border: {
+                width: 2px;
+            }
+        }
+    }
+    .smallImg {
+        width: 100%;
+        height: 250px;
+    }
+    .skillsContainer {
+        position: relative;
+        width: 300px;
+        margin: 20px;
+        @include shadowEffect;
+        .imgText {
+            box-sizing: border-box;
+            position: absolute;
+            top: 0; // top:0 to append it to the top
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5); //black background with 0.5 opacity
+            color: $customDarkGrey;
+            font-size: 0.8em;
+            width: 100%;
+            padding: 30px;
+            height: 100px;
+            color: white;
+        }
+    }
+    .styledComponent {
+        width: 100%;
+        margin: 0;
+        padding: 10px 50px;
+        @include flexCenteredColumn;
+        position: relative;
+        background-color: $customLightGrey;
+        @include showHide;
+        .styledItem {
+            @include shadowEffect();
+            background-color: $customLight;
+            padding: 30px;
+            margin: 10px 10px 60px 0;
+            width: 100%;
+            @include flexSpaceBetweenColumn;
+            @include showHide;
+            .flexSkills {
+                @include flexCenteredRow;
+                flex-wrap: wrap;
+            }
+            .smallContainter {
+                @include flexSpaceBetweenColumn;
+                margin: 20px 10px;
+            }
+            .btnContainter {
+                @include flexCenteredRow;
+                margin: 0px 10px;
+            }
+            .cvImg {
+                border-radius: 50%;
+                @include shadowEffect;
+                @include flexCenteredRow;
+                margin: 30px;
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .styledTitle {
+            @include shadowEffect;
+            background-color: $customMiddleGrey;
+            padding: 20px;
+            margin: 70px 0 50px 0;
+            width: 100%;
+            @include flexCenteredColumn;
+            color: $customOrange;
+        }
+    }
+}
