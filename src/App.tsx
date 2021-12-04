@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import './App.css';
+import './App.scss';
 import cvData from './cvData.json';
 import HeaderComponent from './components/HeaderComponent/HeaderComponent.component';
 import AboutMeComponent, {
