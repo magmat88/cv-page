@@ -1,0 +1,128 @@
+.styledComponent, .styledTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.styledItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btnContainter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.styledComponent {
+  margin: 0px;
+}
+
+.btnContainter {
+  margin: 10px;
+}
+
+.styledItem, .styledTitle {
+  margin: 20px;
+}
+
+.styledComponent, .styledItem, .styledTitle {
+  padding: 20px;
+}
+
+.btn {
+  background-color: #252422;
+  color: #e0dede;
+}
+
+.btn:hover, .btn {
+  background-color: #c9c8c6;
+  color: #53514f;
+}
+
+.styledItem {
+  background-color: #e0dede;
+  color: #252422;
+}
+
+.styledComponent, .styledTitle {
+  background-color: #c9c8c6;
+  color: #252422;
+}
+
+.btn {
+  border: 1px;
+  padding: 10px;
+  margin: 35px;
+}
+
+.btn:hover {
+  padding: 14px;
+  margin: 30px;
+  border: 2px;
+}
+
+.styledComponent {
+  position: relative;
+  width: 100%;
+}
+
+.styledComponent .show {
+  display: block;
+}
+
+.styledComponent .hide {
+  display: none;
+}
+
+.styledItem {
+  width: 100%;
+}
+
+.styledItem .show {
+  display: block;
+}
+
+.styledItem .hide {
+  display: none;
+}
+
+.styledTitle {
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #c9c8c6;
+}
