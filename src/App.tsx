@@ -129,7 +129,7 @@ function App() {
 			</main>
 			<Footer
 				aboutPage={"text about page"}
-				aboutAuthor={"&copy; magmat88"}
+				author={"magmat88"}
 			/>
 		</div>
 	);
