@@ -37,23 +37,26 @@ function App() {
 	const contactRef = useRef(null);
 	return (
 		<div className="styledApp">
-				<Header
-					data={cvData.header}
-					components={cvData.components}
-					aboutMeRef={aboutMeRef}
-					objectiveRef={objectiveRef}
-					educationRef={educationRef}
-					experienceRef={experienceRef}
-					skillsRef={skillsRef}
-					contactRef={contactRef}
-				/>
+			<Header
+				data={cvData.header}
+				components={cvData.components}
+				aboutMeRef={aboutMeRef}
+				objectiveRef={objectiveRef}
+				educationRef={educationRef}
+				experienceRef={experienceRef}
+				skillsRef={skillsRef}
+				contactRef={contactRef}
+			/>
 			<main>
 				{cvData.components.map((component, index) => {
 					switch (component.type) {
 						case Component.ABOUT_ME:
 							return (
 								<AboutMe
-									{...(component as unknown as Omit<AboutMeProps, "index">)}
+									{...(component as unknown as Omit<
+										AboutMeProps,
+										"index"
+									>)}
 									index={index}
 									key={index}
 									aboutMeRef={aboutMeRef}
@@ -62,7 +65,10 @@ function App() {
 						case Component.OBJECTIVE:
 							return (
 								<Objective
-									{...(component as unknown as Omit<ObjectiveProps, "index">)}
+									{...(component as unknown as Omit<
+										ObjectiveProps,
+										"index"
+									>)}
 									index={index}
 									key={index}
 									objectiveRef={objectiveRef}
@@ -71,7 +77,10 @@ function App() {
 						case Component.EDUCATION:
 							return (
 								<Education
-									{...(component as unknown as Omit<EducationProps, "index">)}
+									{...(component as unknown as Omit<
+										EducationProps,
+										"index"
+									>)}
 									index={index}
 									key={index}
 									educationRef={educationRef}
@@ -80,7 +89,10 @@ function App() {
 						case Component.EXPERIENCE:
 							return (
 								<Experience
-									{...(component as unknown as Omit<ExperienceProps, "index">)}
+									{...(component as unknown as Omit<
+										ExperienceProps,
+										"index"
+									>)}
 									index={index}
 									key={index}
 									experienceRef={experienceRef}
@@ -89,7 +101,10 @@ function App() {
 						case Component.SKILLS:
 							return (
 								<Skills
-									{...(component as unknown as Omit<SkillsProps, "index">)}
+									{...(component as unknown as Omit<
+										SkillsProps,
+										"index"
+									>)}
 									index={index}
 									key={index}
 									skillsRef={skillsRef}
@@ -98,7 +113,10 @@ function App() {
 						case Component.CONTACT:
 							return (
 								<Contact
-									{...(component as unknown as Omit<ContactProps, "index">)}
+									{...(component as unknown as Omit<
+										ContactProps,
+										"index"
+									>)}
 									index={index}
 									key={index}
 									contactRef={contactRef}
@@ -109,7 +127,10 @@ function App() {
 					}
 				})}
 			</main>
-			<Footer aboutPage={"text about page"} aboutAuthor={"&copy; magmat88"} />
+			<Footer
+				aboutPage={"text about page"}
+				aboutAuthor={"&copy; magmat88"}
+			/>
 		</div>
 	);
 }
