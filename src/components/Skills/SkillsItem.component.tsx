@@ -1,5 +1,4 @@
-import React from 'react';
-import '../../App.css';
+import '../../App.scss';
 
 export interface SkillsItemProps {
   skillImg: string;
@@ -7,7 +6,7 @@ export interface SkillsItemProps {
   extraInformation: string | null;
 }
 
-const SkillsItem = ({
+export const SkillsItem = ({
   skillImg,
   skillName,
   extraInformation,
@@ -29,5 +28,3 @@ const SkillsItem = ({
     </div>
   );
 };
-
-export default SkillsItem;

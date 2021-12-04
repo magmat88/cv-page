@@ -1,7 +1,6 @@
-import React from 'react';
-import '../../App.css';
+import '../../App.scss';
 
-export interface ObjectiveComponentProps {
+export interface ObjectiveProps {
   title: string;
   componentData: {
     objectiveInformation: string;
@@ -10,12 +9,12 @@ export interface ObjectiveComponentProps {
   objectiveRef: any;
 }
 
-const ObjectiveComponent = ({
+export const Objective = ({
   componentData,
   title,
   index,
   objectiveRef,
-}: ObjectiveComponentProps) => {
+}: ObjectiveProps) => {
   return (
     <section
       className="styledComponent"
@@ -31,5 +30,3 @@ const ObjectiveComponent = ({
     </section>
   );
 };
-
-export default ObjectiveComponent;

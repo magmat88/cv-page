@@ -1,20 +1,19 @@
-import React from 'react';
-import '../../App.css';
-import SkillsItem, { SkillsItemProps } from './SkillsItem.component';
+import '../../App.scss';
+import { SkillsItem, SkillsItemProps } from './SkillsItem.component';
 
-export interface SkillsComponentProps {
+export interface SkillsProps {
   componentData: SkillsItemProps[];
   title: string;
   index: number;
   skillsRef: any;
 }
 
-const SkillsComponent = ({
+export const Skills = ({
   componentData,
   title,
   index,
   skillsRef,
-}: SkillsComponentProps) => {
+}: SkillsProps) => {
   return (
     <section
       className="styledComponent"
@@ -41,4 +40,4 @@ const SkillsComponent = ({
   );
 };
 
-export default SkillsComponent;
+export default Skills;

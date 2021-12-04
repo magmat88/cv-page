@@ -1,8 +1,7 @@
-import React from 'react';
-import '../../App.css';
-import EducationItem, { EducationItemProps } from './EducationItem.component';
+import '../../App.scss';
+import { EducationItem, EducationItemProps } from './EducationItem.component';
 
-export interface EducationComponentProps {
+export interface EducationProps {
   componentData: {
     degree: string;
     university: string;
@@ -22,13 +21,13 @@ export interface EducationComponentProps {
   showExtraInformation: boolean;
 }
 
-const EducationComponent = ({
+export const Education = ({
   componentData,
   title,
   index,
   educationRef,
   showExtraInformation,
-}: EducationComponentProps) => {
+}: EducationProps) => {
   return (
     <section
       className="styledComponent"
@@ -57,4 +56,3 @@ const EducationComponent = ({
     </section>
   );
 };
-export default EducationComponent;

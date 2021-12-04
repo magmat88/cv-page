@@ -1,8 +1,6 @@
-import React from 'react';
-import '../../App.css';
+import '../../App.scss';
 
-interface NavBarComponentProps {
-  // components: any[];
+interface NavBarProps {
   aboutMeRef: any;
   objectiveRef: any;
   educationRef: any;
@@ -11,14 +9,14 @@ interface NavBarComponentProps {
   contactRef: any;
 }
 
-const NavBarComponent = ({
+export const NavBar = ({
   aboutMeRef,
   objectiveRef,
   educationRef,
   workExperienceRef,
   skillsRef,
   contactRef,
-}: NavBarComponentProps) => {
+}: NavBarProps) => {
   return (
     <section className="navItem">
       <button
@@ -72,5 +70,3 @@ const NavBarComponent = ({
     </section>
   );
 };
-
-export default NavBarComponent;

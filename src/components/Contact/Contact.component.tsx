@@ -1,7 +1,6 @@
-import React from 'react';
 import '../../App.css';
 
-export interface ContactComponentProps {
+export interface ContactProps {
   title: string;
   index: number;
   contactRef: any;
@@ -11,12 +10,12 @@ export interface ContactComponentProps {
   };
 }
 
-const ContactComponent = ({
+export const Contact = ({
   title,
   index,
   contactRef,
   componentData: { github, linkedIn },
-}: ContactComponentProps) => {
+}: ContactProps) => {
   return (
     <section
       className="styledComponent"
@@ -61,5 +60,3 @@ const ContactComponent = ({
     </section>
   );
 };
-
-export default ContactComponent;

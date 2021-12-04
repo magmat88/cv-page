@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../App.css';
+import '../../App.scss';
 
 export interface EducationItemProps {
   degree: string;
@@ -14,7 +14,7 @@ export interface EducationItemProps {
   extraInformation: any[];
 }
 
-const EducationItem = ({
+export const EducationItem = ({
   degree,
   university,
   location,
@@ -62,5 +62,3 @@ const EducationItem = ({
     </div>
   );
 };
-
-export default EducationItem;

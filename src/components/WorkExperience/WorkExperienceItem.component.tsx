@@ -1,5 +1,4 @@
-import React from 'react';
-import '../../App.css';
+import '../../App.scss';
 
 export interface WorkExperienceItemProps {
   company: string;
@@ -18,7 +17,7 @@ export interface WorkExperienceItemProps {
   keywordsResponsibilities: string[];
 }
 
-const WorkExperienceItem = ({
+export const WorkExperienceItem = ({
   company,
   companyLogo,
   title,
@@ -32,7 +31,6 @@ const WorkExperienceItem = ({
   extraInformation,
   showResponsibilities,
   responsibilities,
-  keywordsResponsibilities,
 }: WorkExperienceItemProps) => {
   return (
     <div className="styledItem">
@@ -70,5 +68,3 @@ const WorkExperienceItem = ({
     </div>
   );
 };
-
-export default WorkExperienceItem;

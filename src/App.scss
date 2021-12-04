@@ -1,71 +1,9 @@
-// =============== Constants ==============
-
-$customLight: rgb(224, 222, 222);
-$customLightGrey: #c9c8c6;
-$customGrey: #403d39;
-$customMiddleGrey: #53514f;
-$customDarkGrey: #252422;
-$customOrange: #ff7d04;
-$customLightOrange: #fca607;
-
-// =============== Mixins =================
-
-@mixin btnEffect {
-    border: {
-        color: $customOrange;
-        width: 1px;
-        style: solid;
-    }
-    padding: 10px;
-    background-color: $customLightGrey;
-    margin: 35px;
-    &:hover {
-        padding: 14px;
-        background-color: $customGrey;
-        color: white;
-        margin: 30px;
-        border: {
-            width: 2px;
-        }
-    }
-}
-@mixin shadowEffect {
-    box-shadow: 5px 5px 10px $customGrey;
-}
-@mixin flexCenteredColumn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-@mixin showHide {
-    .show {
-        display: block;
-    }
-    .hide {
-        display: none;
-    }
-}
-@mixin flexCenteredRow {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-@mixin flexSpaceBetweenColumn {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-}
-@mixin flex-row {
-    display: flex;
-    flex-direction: row;
-}
-
-// =============== Styles =================
+@import './styles/mixins.scss';
+@import './styles/placeholders.scss';
+@import './styles/variables/variables.scss';
 
 .styledApp {
-    background-color: $customLightGrey;
+    background-color: $color_medium-light;
     margin: 0px;
     padding: 0px;
     @include flexCenteredColumn;
@@ -84,7 +22,7 @@ $customLightOrange: #fca607;
     //     margin-bottom: 15px;
     // }
     .styledHeader {
-        background: $customDarkGrey;
+        background: $color_dark;
         padding: 5px;
         @include flexSpaceBetweenColumn;
         justify-content: space-between;
@@ -100,12 +38,12 @@ $customLightOrange: #fca607;
                 padding: 30px;
                 h2 {
                     font-size: 2em;
-                    color: $customOrange;
+                    color: $color_contrast;
                     @include flexCenteredRow;
                 }
                 p {
                     font-size: 0.9em;
-                    color: $customLightGrey;
+                    color: $color_medium-light;
                     @include flexCenteredRow;
                 }
             }
@@ -130,27 +68,27 @@ $customLightOrange: #fca607;
     }
     .btn {
         @include btnEffect;
-        background-color: $customLightOrange;
-        color: $customDarkGrey;
+        background-color: $color_contrast;
+        color: $color_dark;
         @include shadowEffect;
         &:hover {
-            background-color: $customOrange;
+            background-color: $color_contrast;
         }
     }
     .navBtn {
         border: {
-            color: $customOrange;
+            color: $color_contrast;
             width: 1px;
             style: solid;
         }
         padding: 8px;
         // width: 15%;
-        color: $customOrange;
-        background-color: $customGrey;
+        color: $color_contrast;
+        background-color: $color_medium-dark;
         margin: 5px;
         &:hover {
             padding: 12px;
-            background-color: $customGrey;
+            background-color: $color_medium-dark;
             color: white;
             margin: 0px;
             border: {
@@ -173,7 +111,7 @@ $customLightOrange: #fca607;
             top: 0; // top:0 to append it to the top
             background: rgb(0, 0, 0);
             background: rgba(0, 0, 0, 0.5); //black background with 0.5 opacity
-            color: $customDarkGrey;
+            color: $color_dark;
             font-size: 0.8em;
             width: 100%;
             padding: 30px;
@@ -187,11 +125,11 @@ $customLightOrange: #fca607;
         padding: 10px 50px;
         @include flexCenteredColumn;
         position: relative;
-        background-color: $customLightGrey;
+        background-color: $color_medium-light;
         @include showHide;
         .styledItem {
             @include shadowEffect();
-            background-color: $customLight;
+            background-color: $color_light;
             padding: 30px;
             margin: 10px 10px 60px 0;
             width: 100%;
@@ -220,12 +158,12 @@ $customLightOrange: #fca607;
         }
         .styledTitle {
             @include shadowEffect;
-            background-color: $customMiddleGrey;
+            background-color: $color_medium-dark;
             padding: 20px;
             margin: 70px 0 50px 0;
             width: 100%;
             @include flexCenteredColumn;
-            color: $customOrange;
+            color: $color_contrast;
         }
     }
 }

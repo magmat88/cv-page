@@ -1,8 +1,7 @@
-import React from 'react';
-import '../../App.css';
-import NavBarComponent from '../NavBarComponent/NavBarComponent.component';
+import '../../App.scss';
+import { NavBar } from '../NavBar/NavBar.component';
 
-interface HeaderComponentProps {
+interface HeaderProps {
   data: {
     name: string;
     job: string;
@@ -17,7 +16,7 @@ interface HeaderComponentProps {
   contactRef: any;
 }
 
-const HeaderComponent = ({
+export const Header = ({
   data: { name, job, linkToCv },
   aboutMeRef,
   objectiveRef,
@@ -25,10 +24,10 @@ const HeaderComponent = ({
   workExperienceRef,
   skillsRef,
   contactRef,
-}: HeaderComponentProps) => {
+}: HeaderProps) => {
   return (
     <section className="styledHeader">
-      <NavBarComponent
+      <NavBar
         aboutMeRef={aboutMeRef}
         objectiveRef={objectiveRef}
         educationRef={educationRef}
@@ -54,5 +53,3 @@ const HeaderComponent = ({
     </section>
   );
 };
-
-export default HeaderComponent;

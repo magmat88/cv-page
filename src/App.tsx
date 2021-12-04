@@ -1,25 +1,27 @@
 import React, { useRef } from 'react';
-import './App.css';
+import './App.scss';
 import cvData from './cvData.json';
-import HeaderComponent from './components/HeaderComponent/HeaderComponent.component';
-import AboutMeComponent, {
-  AboutMeComponentProps,
-} from './components/AboutMeComponent/AboutMeComponent.component';
-import ObjectiveComponent, {
-  ObjectiveComponentProps,
-} from './components/ObjectiveComponent/ObjectiveComponent.component';
-import EducationComponent, {
-  EducationComponentProps,
-} from './components/EducationComponent/EducationComponent.component';
-import WorkExperienceComponent, {
-  WorkExperienceComponentProps,
-} from './components/WorkExperienceComponent/WorkExperienceComponent.component';
-import SkillsComponent, {
-  SkillsComponentProps,
-} from './components/SkillsComponent/SkillsComponent.component';
-import ContactComponent, {
-  ContactComponentProps,
-} from './components/ContactComponent/ContactComponent.component';
+import { Header } from './components/Header/Header.component';
+import {
+  AboutMe,
+  AboutMeProps,
+} from './components/AboutMe/AboutMe.component';
+import {
+  Objective,
+  ObjectiveProps,
+} from './components/Objective/Objective.component';
+import {Education,
+  EducationProps
+} from './components/Education/Education.component';
+import {WorkExperience,
+  WorkExperienceProps
+} from './components/WorkExperience/WorkExperience.component';
+import {Skills,
+  SkillsProps,
+} from './components/Skills/Skills.component';
+import {Contact,
+  ContactProps
+} from './components/Contact/Contact.component';
 
 export enum Component {
   ABOUT_ME = 'aboutMe',
@@ -40,7 +42,7 @@ function App() {
   return (
     <div className="styledApp">
       <header>
-        <HeaderComponent
+        <Header
           data={cvData.header}
           components={cvData.components}
           aboutMeRef={aboutMeRef}
@@ -56,9 +58,9 @@ function App() {
           switch (component.type) {
             case Component.ABOUT_ME:
               return (
-                <AboutMeComponent
+                <AboutMe
                   {...(component as unknown as Omit<
-                    AboutMeComponentProps,
+                    AboutMeProps,
                     'index'
                   >)}
                   index={index}
@@ -68,9 +70,9 @@ function App() {
               );
             case Component.OBJECTIVE:
               return (
-                <ObjectiveComponent
+                <Objective
                   {...(component as unknown as Omit<
-                    ObjectiveComponentProps,
+                    ObjectiveProps,
                     'index'
                   >)}
                   index={index}
@@ -80,9 +82,9 @@ function App() {
               );
             case Component.EDUCATION:
               return (
-                <EducationComponent
+                <Education
                   {...(component as unknown as Omit<
-                    EducationComponentProps,
+                    EducationProps,
                     'index'
                   >)}
                   index={index}
@@ -92,9 +94,9 @@ function App() {
               );
             case Component.WORK_EXPERIENCE:
               return (
-                <WorkExperienceComponent
+                <WorkExperience
                   {...(component as unknown as Omit<
-                    WorkExperienceComponentProps,
+                    WorkExperienceProps,
                     'index'
                   >)}
                   index={index}
@@ -104,9 +106,9 @@ function App() {
               );
             case Component.SKILLS:
               return (
-                <SkillsComponent
+                <Skills
                   {...(component as unknown as Omit<
-                    SkillsComponentProps,
+                    SkillsProps,
                     'index'
                   >)}
                   index={index}
@@ -116,9 +118,9 @@ function App() {
               );
             case Component.CONTACT:
               return (
-                <ContactComponent
+                <Contact
                   {...(component as unknown as Omit<
-                    ContactComponentProps,
+                    ContactProps,
                     'index'
                   >)}
                   index={index}

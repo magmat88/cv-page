@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
-// import ReactDOM from 'react-dom';
-import WorkExperienceItem, {
+import {
+  WorkExperienceItem,
   WorkExperienceItemProps,
 } from './WorkExperienceItem.component';
-import '../../App.css';
+import '../../App.scss';
 
-export interface WorkExperienceComponentProps {
+export interface WorkExperienceProps {
   componentData: any;
   title: string;
   index: number;
   workExperienceRef: any;
 }
 
-const WorkExperienceComponent = ({
+export const WorkExperience = ({
   componentData,
   title,
   index,
   workExperienceRef,
-}: WorkExperienceComponentProps) => {
+}: WorkExperienceProps) => {
   const [responsibilitiesVisible, setResponsibilitiesVisible] = useState(
     componentData.showResponsibilities
   );
@@ -87,4 +87,4 @@ const WorkExperienceComponent = ({
   );
 };
 
-export default WorkExperienceComponent;
+export default WorkExperience;

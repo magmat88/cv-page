@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../../App.css';
+import '../../App.scss';
 
-export interface AboutMeComponentProps {
+export interface AboutMeProps {
   title: string;
   index: number;
   componentData: {
@@ -12,12 +12,12 @@ export interface AboutMeComponentProps {
   aboutMeRef: any;
 }
 
-const AboutMeComponent = ({
+export const AboutMe = ({
   componentData,
   title,
   index,
   aboutMeRef,
-}: AboutMeComponentProps) => {
+}: AboutMeProps) => {
   const [cvImgVisible, setCvImgVisible] = useState(componentData.showCvImg);
 
   return (
@@ -53,5 +53,3 @@ const AboutMeComponent = ({
     </section>
   );
 };
-
-export default AboutMeComponent;
