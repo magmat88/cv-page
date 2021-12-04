@@ -1,0 +1,23 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
+@import '../../styles/variables/variables.scss';
+
+.footer-container {
+    @extend %columnCentered;
+    @extend %paletteDark;
+
+    @include forLargeScreens($breakpoint-medium) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.about-container {
+    @extend %paddingStandard;
+    @extend %rowLeft;
+}
+
+.author-container {
+    @extend %paddingStandard;
+    @extend %rowRight;
+}

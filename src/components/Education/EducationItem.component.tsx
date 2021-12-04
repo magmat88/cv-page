@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import './education.component.scss';
 import '../../App.scss';
 
 export interface EducationItemProps {

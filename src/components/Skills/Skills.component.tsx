@@ -1,5 +1,6 @@
 import '../../App.scss';
-import { SkillsItem, SkillsItemProps } from './SkillsItem.component';
+import './skills.component.scss';
+import { SkillsItem, SkillsItemProps } from './skillsItem.component';
 
 export interface SkillsProps {
   componentData: SkillsItemProps[];
@@ -28,9 +29,8 @@ export const Skills = ({
           {componentData.map((skillsItem: SkillsItemProps) => (
             <div className="flexSkills">
               <SkillsItem
-                skillImg={skillsItem.skillImg}
                 skillName={skillsItem.skillName}
-                extraInformation={skillsItem.extraInformation}
+                skillIconName={skillsItem.skillIconName}
               />
             </div>
           ))}
@@ -39,5 +39,3 @@ export const Skills = ({
     </section>
   );
 };
-
-export default Skills;

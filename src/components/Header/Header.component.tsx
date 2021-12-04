@@ -1,5 +1,6 @@
-import '../../App.scss';
-import { NavBar } from '../NavBar/NavBar.component';
+import "../../App.scss";
+import "./header.component.scss";
+import { NavBar } from "./navBar.component";
 
 interface HeaderProps {
   data: {
@@ -11,45 +12,45 @@ interface HeaderProps {
   aboutMeRef: any;
   objectiveRef: any;
   educationRef: any;
-  workExperienceRef: any;
+  experienceRef: any;
   skillsRef: any;
   contactRef: any;
 }
 
 export const Header = ({
-  data: { name, job, linkToCv },
-  aboutMeRef,
-  objectiveRef,
-  educationRef,
-  workExperienceRef,
-  skillsRef,
-  contactRef,
+	data: { name, job, linkToCv },
+	aboutMeRef,
+	objectiveRef,
+	educationRef,
+	experienceRef,
+	skillsRef,
+	contactRef,
 }: HeaderProps) => {
-  return (
-    <section className="styledHeader">
-      <NavBar
-        aboutMeRef={aboutMeRef}
-        objectiveRef={objectiveRef}
-        educationRef={educationRef}
-        workExperienceRef={workExperienceRef}
-        skillsRef={skillsRef}
-        contactRef={contactRef}
-      />
-      <div className="headerItem">
-        <div className="nameItem">
-          <h2>{name}</h2>
-          <p>{job}</p>
-        </div>
-        <div className="cvBtn">
-          <button
-            className="navBtn"
-            id="cv-btn"
-            onClick={() => window.open(linkToCv)}
-          >
-            My CV in PDF
-          </button>
-        </div>
-      </div>
-    </section>
-  );
+	return (
+		<section className="styledHeader">
+			<NavBar
+				aboutMeRef={aboutMeRef}
+				objectiveRef={objectiveRef}
+				educationRef={educationRef}
+				experienceRef={experienceRef}
+				skillsRef={skillsRef}
+				contactRef={contactRef}
+			/>
+			<div className="headerItem">
+				<div className="nameItem">
+					<h2>{name}</h2>
+					<p>{job}</p>
+				</div>
+				<div className="cvBtn">
+					<button
+						className="navBtn"
+						id="cv-btn"
+						onClick={() => window.open(linkToCv)}
+					>
+						My CV in PDF
+					</button>
+				</div>
+			</div>
+		</section>
+	);
 };

@@ -1,53 +1,63 @@
-@import './mixins.scss';
-@import './variables/variables.scss';
+@import "./mixins.scss";
+@import "./variables/variables.scss";
 
-/* %columnCentered {
+%columnCentered {
     @include setFlexDisplay(column, center, center);
-};
+}
+
 %columnLeft {
     @include setFlexDisplay(column, flex-start, flex-start);
-};
+}
 %columnSpaceBetween {
     @include setFlexDisplay(column, space-between, space-between);
-};
+}
 
 %rowCentered {
     @include setFlexDisplay(row, center, center);
-};
+}
 %rowLeft {
     @include setFlexDisplay(row, flex-start, flex-start);
-};
+}
 %rowRight {
     @include setFlexDisplay(row, flex-end, flex-end);
-};
+}
 %rowSpaceBetween {
     @include setFlexDisplay(row, space-between, space-between);
-};
+}
 
 %marginZero {
     margin: 0px;
-}; */
-/* %marginSmall {
+}
+%marginSmall {
     margin: 5px;
-};
+}
 %marginStandard {
     margin: 10px;
-}; */
+}
+%marginMedium {
+    margin: 20px;
+}
 
-/* %paddingZero {
+%paddingZero {
     padding: 0px;
-};
+}
 %paddingSmall {
     padding: 5px;
-};
+}
 %paddingStandard {
     padding: 10px;
-}; */
+}
+%paddingMedium {
+    padding: 20px;
+}
 
-
-/* %paletteDark {
+%paletteDark {
     background-color: $color_background-dark;
     color: $color_text-light;
+}
+%paletteDarkContrast {
+    background-color: $color_background-medium-light;
+    color: $color_text-contrast;
 }
 %paletteLight {
     background-color: $color_background-light;
@@ -56,5 +66,21 @@
 %paletteMedium {
     background-color: $color_background-medium-light;
     color: $color_text-dark;
-} */
+}
 
+%shadowEffect {
+    box-shadow: 5px 5px 10px $color_shadow;
+}
+
+%buttonEffect {
+    border: 1px;
+    @extend %paletteDark;
+    padding: 10px;
+    margin: 35px;
+    &:hover {
+        padding: 14px;
+        @extend %paletteDarkContrast;
+        margin: 30px;
+        border: 2px;
+    }
+}

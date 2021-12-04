@@ -1,6 +1,7 @@
 import '../../App.scss';
+import './experience.component.scss';
 
-export interface WorkExperienceItemProps {
+export interface ExperienceItemProps {
   company: string;
   companyLogo: string;
   title: string;
@@ -17,7 +18,7 @@ export interface WorkExperienceItemProps {
   keywordsResponsibilities: string[];
 }
 
-export const WorkExperienceItem = ({
+export const ExperienceItem = ({
   company,
   companyLogo,
   title,
@@ -31,7 +32,7 @@ export const WorkExperienceItem = ({
   extraInformation,
   showResponsibilities,
   responsibilities,
-}: WorkExperienceItemProps) => {
+}: ExperienceItemProps) => {
   return (
     <div className="styledItem">
       <div className={showCompanyName ? 'show' : 'hide'}>

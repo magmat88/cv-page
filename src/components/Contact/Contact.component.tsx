@@ -1,4 +1,5 @@
-import '../../App.css';
+import '../../App.scss';
+import './contact.component.scss';
 
 export interface ContactProps {
   title: string;

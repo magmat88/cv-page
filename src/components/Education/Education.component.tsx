@@ -1,5 +1,6 @@
 import '../../App.scss';
-import { EducationItem, EducationItemProps } from './EducationItem.component';
+import './education.component.scss';
+import { EducationItem, EducationItemProps } from './educationItem.component';
 
 export interface EducationProps {
   componentData: {

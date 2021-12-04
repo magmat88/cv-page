@@ -1,4 +1,5 @@
 import '../../App.scss';
+import './objective.component.scss';
 
 export interface ObjectiveProps {
   title: string;

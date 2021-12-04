@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../../App.scss';
+import './aboutMe.component.scss';
 
 export interface AboutMeProps {
   title: string;
