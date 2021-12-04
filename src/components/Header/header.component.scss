@@ -1,51 +1,65 @@
-@import '../../styles/mixins.scss';
-@import '../../styles/placeholders.scss';
-@import '../../styles/variables/variables.scss';
+@import "../../styles/mixins.scss";
+@import "../../styles/placeholders.scss";
+@import "../../styles/variables/variables.scss";
 
 .styledHeader {
-    @extend %columnSpaceBetween;
+    @extend %columnCentered;
     @extend %paletteDark;
     @extend %paddingSmall;
-    height: 170px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 10;
+    // height: 100%;
+
+    @include forLargeScreens($breakpoint-medium) {
+        height: 170px;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 10;
+    }
 }
 
-nav {
-    @extend %rowSpaceBetween;
-    @extend %marginStandard;
-    width: 100%;
-}
 
-.navItem {
-    @extend %rowCentered;
-    width: 100%;
+
+.navItem,
+.navigation-item {
+    @extend %columnLeft;
+    width: 100%; 
+
+    @include forLargeScreens($breakpoint-medium) {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+    }
 }
 
 .navBtn {
     @extend %marginSmall;
     @extend %paddingStandard;
     @extend %paletteDark;
+    border: none;
+    cursor: pointer;
+    width: 100%;
     &:hover {
         @extend %paletteDarkContrast;
+    }
+
+    @include forLargeScreens($breakpoint-medium) {
+        color: none;
+        width: auto;
     }
 }
 
 .headerItem {
     @extend %rowSpaceBetween;
-    height: 100px;
     width: 100%;
 }
 
 .nameItem {
-    @extend %rowSpaceBetween;
+    @extend %columnCentered;
     @extend %paddingMedium;
     width: 80%;
     h2 {
         @extend %rowCentered;
-        font-size: 2em;
+        font-size: 1.7em;
         color: $color_contrast;
     }
     p {
@@ -57,7 +71,4 @@ nav {
 
 .cvBtn {
     @extend %columnCentered;
-    width: 20%;
 }
-
-
