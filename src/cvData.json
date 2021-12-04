@@ -11,7 +11,7 @@
       "componentData": {
         "about": "My name is Magdalena. Welcome to my CV page made in ReactJS/ TypeScript.",
         "showCvImg": false,
-        "cvImg": "https://media-exp1.licdn.com/dms/image/C4D03AQFSwmd3z55ZXg/profile-displayphoto-shrink_400_400/0/1635438441555?e=1642032000&v=beta&t=5rkbiqME97ZKSmpAww0AX0Z3E38F0YCzVT8PaWqJZV4"
+        "cvImg": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
       },
       "ref": null
     },
@@ -58,8 +58,8 @@
       "ref": null
     },
     {
-      "type": "workExperience",
-      "title": "Work experience",
+      "type": "Experience",
+      "title": "Experience",
       "componentData": [
         {
           "company": "US Pharmacia",
@@ -97,64 +97,44 @@
       "title": "Skills",
       "componentData": [
         {
-          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
           "skillName": "JavaScript",
-          "extraInformation": null
+          "skillIconName": "fab fa-html5"
         },
         {
-          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
           "skillName": "HTML5",
-          "extraInformation": null
+          "skillIconName": "fab fa-html5"
         },
         {
-          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
           "skillName": "CSS",
-          "extraInformation": null
+          "skillIconName": "fab fa-html5"
         },
         {
-          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
           "skillName": "SASS",
-          "extraInformation": null
+          "skillIconName": "fab fa-html5"
         },
         {
-          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
           "skillName": "GIT",
-          "extraInformation": null
+          "skillIconName": "fab fa-html5"
         },
         {
-          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
           "skillName": "TypeScript",
-          "extraInformation": null
+          "skillIconName": "fab fa-html5"
         },
         {
-          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
           "skillName": "ReactJS",
-          "extraInformation": null
+          "skillIconName": "fab fa-html5"
         },
         {
-          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
           "skillName": "Software Testing Fundamentals",
-          "extraInformation": null
+          "skillIconName": "fab fa-html5"
         },
         {
-          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
           "skillName": "Lean Management Tools",
-          "extraInformation": "5Why, Ishikawa Diagram"
+          "skillIconName": "fab fa-html5"
         },
         {
-          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
           "skillName": "English",
-          "extraInformation": "B2 - ACERT Academic Certificate"
-        },
-        {
-          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-          "skillName": "Good interpersonal skills",
-          "extraInformation": null
-        },
-        {
-          "skillImg": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-          "skillName": "Working under pressure",
-          "extraInformation": null
+          "skillIconName": "fab fa-html5"
         }
       ],
       "ref": null

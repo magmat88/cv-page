@@ -1,0 +1,44 @@
+@mixin forLargeScreens($media) {
+    @media (min-width: $media) {
+        @content;
+    }
+}
+
+@mixin setFlexDisplay($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin setImageDisplay($maxWidth, $height, $borderRadius) {
+    max-width: $maxWidth;
+    height: $height;
+    border-radius: $borderRadius;
+
+}
+
+@mixin setLinkDark() {
+    @extend %paletteDark;
+    text-decoration: none;
+    transition: color 0.5s;
+    border: none;
+
+    &:active {
+        color: $color_text-active;
+    }
+    &:hover {
+        color: $color_text-contrast;
+        cursor: pointer;
+    }
+}
+
+@mixin showHide {
+    .show {
+        display: block;
+    }
+    .hide {
+        display: none;
+    }
+}
+

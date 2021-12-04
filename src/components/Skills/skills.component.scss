@@ -1,0 +1,41 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
+@import '../../styles/variables/variables.scss';
+
+.styledComponent {
+    @extend %columnCentered;
+    @extend %marginZero;
+    @extend %paddingMedium;
+    @extend %paletteMedium;
+    @include showHide;
+    position: relative;
+    width: 100%;
+}
+
+.styledItem {
+    @extend %columnSpaceBetween;
+    @extend %marginMedium;
+    @extend %paddingMedium;
+    @extend %paletteLight;
+    @include showHide;
+    width: 100%;
+}
+
+.styledTitle {
+    @extend %columnCentered;
+    @extend %marginMedium;
+    @extend %paddingMedium;
+    @extend %paletteMedium;
+    width: 100%;
+}
+
+.flexSkills {
+    @extend %rowCentered;
+    flex-wrap: wrap;
+}
+
+.skillsContainer {
+    @extend %marginMedium;
+    position: relative;
+    width: 300px;
+}

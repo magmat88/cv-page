@@ -1,0 +1,63 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
+@import '../../styles/variables/variables.scss';
+
+.styledHeader {
+    @extend %columnSpaceBetween;
+    @extend %paletteDark;
+    @extend %paddingSmall;
+    height: 170px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+nav {
+    @extend %rowSpaceBetween;
+    @extend %marginStandard;
+    width: 100%;
+}
+
+.navItem {
+    @extend %rowCentered;
+    width: 100%;
+}
+
+.navBtn {
+    @extend %marginSmall;
+    @extend %paddingStandard;
+    @extend %paletteDark;
+    &:hover {
+        @extend %paletteDarkContrast;
+    }
+}
+
+.headerItem {
+    @extend %rowSpaceBetween;
+    height: 100px;
+    width: 100%;
+}
+
+.nameItem {
+    @extend %rowSpaceBetween;
+    @extend %paddingMedium;
+    width: 80%;
+    h2 {
+        @extend %rowCentered;
+        font-size: 2em;
+        color: $color_contrast;
+    }
+    p {
+        @extend %rowCentered;
+        font-size: 0.9em;
+        color: $color_medium-light;
+    }
+}
+
+.cvBtn {
+    @extend %columnCentered;
+    width: 20%;
+}
+
+
