@@ -1,21 +1,7 @@
 import "../../App.scss";
 import "./header.component.scss";
 import { NavBar } from "./navBar.component";
-
-interface HeaderProps {
-	data: {
-		name: string;
-		position: string;
-		linkToCv: string;
-	};
-	components: any[];
-	aboutMeRef: any;
-	objectiveRef: any;
-	educationRef: any;
-	experienceRef: any;
-	skillsRef: any;
-	contactRef: any;
-}
+import { HeaderProps } from "../../modules/content/content.state";
 
 export const Header = ({
 	data: { name, position, linkToCv },

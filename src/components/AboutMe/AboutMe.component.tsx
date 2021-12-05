@@ -1,17 +1,7 @@
 import { useState } from 'react';
 import '../../App.scss';
 import './aboutMe.component.scss';
-
-export interface AboutMeProps {
-  title: string;
-  index: number;
-  componentData: {
-    about: string;
-    showCvImg: boolean;
-    cvImg: string;
-  };
-  aboutMeRef: any;
-}
+import { AboutMeProps } from "../../modules/content/content.state";
 
 export const AboutMe = ({
   componentData,

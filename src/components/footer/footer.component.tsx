@@ -1,10 +1,5 @@
-// import '../../App.scss';
 import './footer.component.scss';
-
-interface FooterProps {
-    aboutPage: string;
-    author: string;
-}
+import { FooterProps } from "../../modules/content/content.state";
 
 export const Footer = ({aboutPage, author}: FooterProps) => {
     return (

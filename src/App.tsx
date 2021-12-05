@@ -25,10 +25,7 @@ function App() {
 				contactRef={contactRef}
 			/>
 			<MainContent />
-			<Footer
-				aboutPage={"text about page"}
-				author={"magmat88"}
-			/>
+			<Footer aboutPage={"text about page"} author={"magmat88"} />
 		</div>
 	);
 }

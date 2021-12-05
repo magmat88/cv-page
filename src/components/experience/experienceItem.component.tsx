@@ -1,22 +1,6 @@
 import '../../App.scss';
 import './experience.component.scss';
-
-export interface ExperienceItemProps {
-  company: string;
-  companyLogo: string;
-  title: string;
-  department: string;
-  startYear: string;
-  startMonth: string;
-  endYear: string | null;
-  endMonth: string | null;
-  showCompanyName: boolean;
-  showCompanyLogo: boolean;
-  extraInformation: string | null;
-  showResponsibilities: boolean;
-  responsibilities: string[];
-  keywordsResponsibilities: string[];
-}
+import { ExperienceItemProps } from "../../modules/content/content.state";
 
 export const ExperienceItem = ({
   company,

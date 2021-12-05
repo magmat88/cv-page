@@ -1,17 +1,11 @@
 import { useState } from "react";
-import {
-	ExperienceItem,
-	ExperienceItemProps,
-} from "./experienceItem.component";
+import { ExperienceItem } from "./experienceItem.component";
 import "../../App.scss";
 import "./experience.component.scss";
-
-export interface ExperienceProps {
-	componentData: any;
-	title: string;
-	index: number;
-	experienceRef: any;
-}
+import {
+	ExperienceProps,
+	ExperienceItemProps
+} from "../../modules/content/content.state";
 
 export const Experience = ({
 	componentData,
