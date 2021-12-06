@@ -1,19 +1,7 @@
 import { useState } from 'react';
 import './education.component.scss';
 import '../../App.scss';
-
-export interface EducationItemProps {
-  degree: string;
-  university: string;
-  location: string;
-  department: string | null;
-  startYear: string | null;
-  startMonth: string | null;
-  endYear: string | null;
-  endMonth: string | null;
-  showExtraInformation: boolean;
-  extraInformation: any[];
-}
+import { EducationItemProps } from "../../modules/content/content.state";
 
 export const EducationItem = ({
   degree,

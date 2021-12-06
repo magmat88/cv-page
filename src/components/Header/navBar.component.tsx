@@ -1,14 +1,5 @@
 import "../../App.scss";
-// import './header.component.scss';
-
-interface NavBarProps {
-	aboutMeRef: any;
-	objectiveRef: any;
-	educationRef: any;
-	experienceRef: any;
-	skillsRef: any;
-	contactRef: any;
-}
+import { NavBarProps } from "../../modules/content/content.state";
 
 export const NavBar = ({
 	aboutMeRef,

@@ -1,42 +1,32 @@
 import "../../App.scss";
-import { useRef } from "react";
 import "./mainContent.component.scss";
-import { AboutMe, AboutMeProps } from "../aboutMe/aboutMe.component";
-import {
-	Objective,
-	ObjectiveProps,
-} from "../objective/objective.component";
-import {
-	Education,
-	EducationProps,
-} from "../education/education.component";
-import {
-	Experience,
-	ExperienceProps,
-} from "../experience/experience.component";
-import { Skills, SkillsProps } from "../skills/skills.component";
-import { Contact, ContactProps } from "../contact/contact.component";
+import { useRef } from "react";
+import { AboutMe } from "../aboutMe/aboutMe.component";
+import { Objective } from "../objective/objective.component";
+import { Education } from "../education/education.component";
+import { Experience } from "../experience/experience.component";
+import { Skills } from "../skills/skills.component";
+import { Contact } from "../contact/contact.component";
 import cvData from "../../cvData.json";
-
-export enum Component {
-	ABOUT_ME = "aboutMe",
-	OBJECTIVE = "objective",
-	EDUCATION = "education",
-	EXPERIENCE = "experience",
-	SKILLS = "skills",
-	CONTACT = "contact",
-}
+import {
+	AboutMeProps,
+	Component,
+	ContactProps,
+	EducationProps,
+	ExperienceProps,
+	ObjectiveProps,
+	SkillsProps,
+} from "../../modules/content/content.state";
 
 export const MainContent = (): JSX.Element => {
-	
-    const aboutMeRef = useRef(null);
+	const aboutMeRef = useRef(null);
 	const objectiveRef = useRef(null);
 	const educationRef = useRef(null);
 	const experienceRef = useRef(null);
 	const skillsRef = useRef(null);
 	const contactRef = useRef(null);
 
-    return (
+	return (
 		<main>
 			{cvData.components.map((component, index) => {
 				switch (component.type) {

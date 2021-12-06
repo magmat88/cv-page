@@ -1,15 +1,6 @@
 import '../../App.scss';
 import './contact.component.scss';
-
-export interface ContactProps {
-  title: string;
-  index: number;
-  contactRef: any;
-  componentData: {
-    github: string;
-    linkedIn: string;
-  };
-}
+import { ContactProps } from "../../modules/content/content.state";
 
 export const Contact = ({
   title,

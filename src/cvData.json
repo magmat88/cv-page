@@ -18,9 +18,9 @@
     {
       "type": "objective",
       "title": "Objective",
-      "componentData": {
+      "componentData": [{
         "objectiveInformation": "Over 9 years of experience in quality control in FMCG industry, where the advantages were analytical thinking, inquisitiveness and conscientiousness. Highly motivated, open-minded person. For last months intensively improved skills of web design, web development and learned software testing fundamentals. Currently I am looking for the new opportunities."
-      },
+      }],
       "ref": null
     },
     {
@@ -142,10 +142,10 @@
     {
       "type": "contact",
       "title": "Contact",
-      "componentData": {
+      "componentData": [{
         "github": "https://github.com/magmat88",
         "linkedIn": "https://www.linkedin.com/in/magdalena-matusiak-330072a6"
-      },
+      }],
       "ref": null
     }
   ]
