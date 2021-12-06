@@ -43,12 +43,6 @@ export interface AboutMeProps {
     aboutMeRef: any;
   }
 
-export interface AboutMeProps {
-	title: string;
-	index: number;
-	aboutMeRef: any;
-}
-
 export interface ContactProps {
 	title: string;
 	index: number;
