@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import "./App.scss";
 import cvData from "./cvData.json";
-import { Header } from "./components/header/header.component";
+// import { Header } from "./components/header/header.component";
 import { MainContent } from "./components/mainContent/mainContent.component";
 import { Footer } from "./components/footer/footer.component";
 
@@ -14,7 +14,7 @@ function App() {
 	const contactRef = useRef(null);
 	return (
 		<div className="styledApp">
-			<Header
+			{/* <Header
 				components={cvData.components}
 				aboutMeRef={aboutMeRef}
 				objectiveRef={objectiveRef}
@@ -22,7 +22,7 @@ function App() {
 				experienceRef={experienceRef}
 				skillsRef={skillsRef}
 				contactRef={contactRef}
-			/>
+			/> */}
 			<MainContent />
 			<Footer aboutPage={"text about page"} author={"magmat88"} />
 		</div>

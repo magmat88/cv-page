@@ -8,13 +8,15 @@
 			"title": "About me",
 			"ref": null,
 			"about": "My name is Magdalena. Welcome to my CV page made in ReactJS/ TypeScript.",
-			"linkToCV": "https://drive.google.com/file/d/1HyjULycIfjQ_2xteQqrss8QA6JNB9OrP/view?usp=sharing"
+			"linkToCV": "https://drive.google.com/file/d/1HyjULycIfjQ_2xteQqrss8QA6JNB9OrP/view?usp=sharing",
+			"github": "https://github.com/magmat88",
+			"linkedIn": "https://www.linkedin.com/in/magdalena-matusiak-330072a6"
 		},
 		{
 			"type": "objective",
 			"title": "Objective",
 			"ref": null,
-			"objectiveInformation": "Over 9 years of experience in quality control in FMCG industry, where the advantages were analytical thinking, inquisitiveness and conscientiousness. Highly motivated, open-minded person. For last months intensively improved skills of web design, web development and learned software testing fundamentals. Currently I am looking for the new opportunities."
+			"objective": "Over 9 years of experience in quality control in FMCG industry, where the advantages were analytical thinking, inquisitiveness and conscientiousness. Highly motivated, open-minded person. For last months intensively improved skills of web design, web development and learned software testing fundamentals. Currently I am looking for the new opportunities."
 		},
 		{
 			"type": "education",
@@ -74,8 +76,6 @@
 			"type": "contact",
 			"title": "Contact",
 			"ref": null,
-			"github": "https://github.com/magmat88",
-			"linkedIn": "https://www.linkedin.com/in/magdalena-matusiak-330072a6",
 			"email": "magdalena.matusiak88@gmail.com"
 		}
 	]

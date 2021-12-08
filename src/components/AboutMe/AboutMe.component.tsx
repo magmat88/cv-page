@@ -1,10 +1,17 @@
 // import { useState } from 'react';
-// import '../../App.scss';
 import aboutMeImg from "../../images/aboutMe/aboutMeImg.jpg";
 import "./aboutMe.component.scss";
 import { AboutMeProps } from "../../modules/content/content.state";
 
-export const AboutMe = ({ title, index, aboutMeRef, about, linkToCV }: AboutMeProps) => {
+export const AboutMe = ({
+	title,
+	index,
+	aboutMeRef,
+	about,
+	linkToCV,
+	github,
+	linkedIn,
+}: AboutMeProps) => {
 	// const [cvImgVisible, setCvImgVisible] = useState(false);
 
 	return (
@@ -24,15 +31,21 @@ export const AboutMe = ({ title, index, aboutMeRef, about, linkToCV }: AboutMePr
 					Duis aute irure dolor in reprehenderit in voluptate velit
 					esse cillum dolore eu fugiat nulla pariatur.
 				</p>
-				<div className="cvBtn">
+				<button
+					onClick={() => window.open(github)}
+				>
+					Github
+				</button>
+				<button
+					onClick={() => window.open(linkedIn)}
+				>
+					LinkedIn
+				</button>
 					<button
-						className="navBtn"
-						id="cv-btn"
 						onClick={() => window.open(linkToCV)}
 					>
 						{"↓ My CV"}
 					</button>
-				</div>
 			</div>
 			<figure className="about-me-img">
 				<img src={aboutMeImg} alt="about-me-pic" />

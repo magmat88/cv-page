@@ -4,7 +4,7 @@
 
 .about-me-container {
     @extend %rowSpaceBetween;
-    margin-top: 0px;
+    @extend %marginStandard;
 }
 
 .about-me-content {
