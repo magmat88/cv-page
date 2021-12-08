@@ -1,17 +1,15 @@
 import "../../App.scss";
 import "./education.component.scss";
-import { EducationItem } from "./educationItem.component";
+// import { EducationItem } from "./educationItem.component";
 import {
-	EducationItemProps,
+	// EducationItemProps,
 	EducationProps,
 } from "../../modules/content/content.state";
 
 export const Education = ({
-	componentData,
 	title,
 	index,
 	educationRef,
-	showExtraInformation,
 }: EducationProps) => {
 	return (
 		<section
@@ -23,22 +21,14 @@ export const Education = ({
 				<div className="styledTitle">
 					<h1>{title}</h1>
 				</div>
-				{componentData.map((educationItem: EducationItemProps) => (
-					<EducationItem
-						degree={educationItem.degree}
+					{/* <EducationItem
+						degree={degree}
 						university={educationItem.university}
-						location={educationItem.location}
 						department={educationItem.department}
-						startYear={educationItem.startYear}
-						startMonth={educationItem.startMonth}
-						endYear={educationItem.endYear}
-						endMonth={educationItem.endMonth}
-						showExtraInformation={
-							educationItem.showExtraInformation
-						}
+						startDate={educationItem.startDate}
+						endDate={educationItem.endDate}
 						extraInformation={educationItem.extraInformation}
-					/>
-				))}
+					/> */}
 			</div>
 		</section>
 	);

@@ -1,27 +1,23 @@
 import { useState } from "react";
-import { ExperienceItem } from "./experienceItem.component";
+// import { ExperienceItem } from "./experienceItem.component";
 import "../../App.scss";
 import "./experience.component.scss";
 import {
 	ExperienceProps,
-	ExperienceItemProps
+	// ExperienceItemProps
 } from "../../modules/content/content.state";
 
 export const Experience = ({
-	componentData,
 	title,
 	index,
 	experienceRef,
 }: ExperienceProps) => {
-	const [responsibilitiesVisible, setResponsibilitiesVisible] = useState(
-		componentData.showResponsibilities
-	);
+	const [responsibilitiesVisible, setResponsibilitiesVisible] =
+		useState(false);
 	const [companyLogoVisible, setCompanyLogoVisible] = useState(
-		componentData.showCompanyLogo
-	);
+false	);
 	const [companyNameVisible, setCompanyNameVisible] = useState(
-		componentData.showCompanyName
-	);
+false	);
 
 	return (
 		<section
@@ -29,7 +25,6 @@ export const Experience = ({
 			id={`#component-${index}`}
 			ref={experienceRef}
 		>
-			{componentData.map((experienceItem: ExperienceItemProps) => (
 				<div className="styledItem">
 					<div className="styledTitle">
 						<h1>{title}</h1>
@@ -65,26 +60,20 @@ export const Experience = ({
 							responsibilities
 						</button>
 					</div>
-					<ExperienceItem
+					{/* <ExperienceItem
 						company={experienceItem.company}
 						companyLogo={experienceItem.companyLogo}
-						title={experienceItem.title}
+						position={experienceItem.position}
 						department={experienceItem.department}
-						startYear={experienceItem.startYear}
-						startMonth={experienceItem.startMonth}
-						endYear={experienceItem.endYear}
-						endMonth={experienceItem.endMonth}
-						showCompanyName={companyNameVisible}
-						showCompanyLogo={companyLogoVisible}
+						startDate={experienceItem.startDate}
+						endDate={experienceItem.endDate}
 						extraInformation={experienceItem.extraInformation}
-						showResponsibilities={responsibilitiesVisible}
 						responsibilities={experienceItem.responsibilities}
 						keywordsResponsibilities={
 							experienceItem.keywordsResponsibilities
 						}
-					/>
+					/> */}
 				</div>
-			))}
 		</section>
 	);
 };

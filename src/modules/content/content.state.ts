@@ -34,52 +34,36 @@ export interface ComponentData {
 export interface AboutMeProps {
 	title: string;
 	index: number;
-	componentData: AboutMeItemProps[];
-	aboutMeRef: any;
-}
-
-export interface AboutMeItemProps {
 	about: string;
-	showCvImg: boolean;
-	cvImg: string;
+	image: string;
+	aboutMeRef: any;
 }
 
 export interface ContactProps {
 	title: string;
 	index: number;
-	componentData: ContactItemProps[];
 	contactRef: any;
-}
-
-export interface ContactItemProps {
 	github: string;
 	linkedIn: string;
 	email: string;
 }
 
-export interface EducationProps {
-	componentData: EducationItemProps[];
+export interface EducationProps extends EducationItemProps {
 	title: string;
 	index: number;
 	educationRef: any;
-	showExtraInformation: boolean;
 }
 
 export interface EducationItemProps {
 	degree: string;
-	university: string;
-	location: string;
-	department: string | null;
-	startYear: string | null;
-	startMonth: string | null;
-	endYear: string | null;
-	endMonth: string | null;
-	showExtraInformation: boolean;
+	department: string;
+	endDate: string | null;
 	extraInformation: any[];
+	startDate: string;
+	university: string;
 }
 
-export interface ExperienceProps {
-	componentData: ExperienceItemProps[];
+export interface ExperienceProps extends ExperienceItemProps {
 	title: string;
 	index: number;
 	experienceRef: any;
@@ -88,18 +72,13 @@ export interface ExperienceProps {
 export interface ExperienceItemProps {
 	company: string;
 	companyLogo: string;
-	title: string;
+	position: string;
 	department: string;
-	startYear: string;
-	startMonth: string;
-	endYear: string | null;
-	endMonth: string | null;
-	showCompanyName: boolean;
-	showCompanyLogo: boolean;
+	startDate: string;
+	endDate: string | null;
 	extraInformation: string | null;
-	showResponsibilities: boolean;
 	responsibilities: string[];
-	keywordsResponsibilities: string[];
+	earnedSkills: string[];
 }
 
 export interface FooterProps {
@@ -107,23 +86,19 @@ export interface FooterProps {
 	author: string;
 }
 
-export interface SkillsProps {
-	componentData: SkillsItemProps[];
+export interface SkillsProps extends SkillsItemProps {
 	title: string;
 	index: number;
 	skillsRef: any;
 }
 
 export interface SkillsItemProps {
-	skillName: string;
-	skillIconName: string;
+	skills: string[];
 }
 
 export interface ObjectiveProps {
 	title: string;
-	componentData: {
-		objectiveInformation: string;
-	};
 	index: number;
 	objectiveRef: any;
+	objectiveInformation: string;
 }

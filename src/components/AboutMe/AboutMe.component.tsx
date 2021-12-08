@@ -4,12 +4,13 @@ import './aboutMe.component.scss';
 import { AboutMeProps } from "../../modules/content/content.state";
 
 export const AboutMe = ({
-  componentData,
   title,
   index,
   aboutMeRef,
+  about,
+  image
 }: AboutMeProps) => {
-  const [cvImgVisible, setCvImgVisible] = useState(componentData.showCvImg);
+  const [cvImgVisible, setCvImgVisible] = useState(false);
 
   return (
     <section
@@ -33,13 +34,13 @@ export const AboutMe = ({
             <img
               height="400px"
               alt="cv-img"
-              src={componentData.cvImg}
+              src={image}
               className="cvImg"
             />
           </div>
         
         </div>
-        <p>{componentData.about}</p>
+        <p>{about}</p>
       </div>
     </section>
   );
