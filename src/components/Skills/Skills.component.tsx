@@ -1,13 +1,7 @@
 import '../../App.scss';
 import './skills.component.scss';
-import { SkillsItem, SkillsItemProps } from './skillsItem.component';
-
-export interface SkillsProps {
-  componentData: SkillsItemProps[];
-  title: string;
-  index: number;
-  skillsRef: any;
-}
+import { SkillsItem } from './skillsItem.component';
+import { SkillsItemProps, SkillsProps } from '../../modules/content/content.state';
 
 export const Skills = ({
   componentData,

@@ -6,7 +6,7 @@ export const Contact = ({
   title,
   index,
   contactRef,
-  componentData: { github, linkedIn },
+  componentData
 }: ContactProps) => {
   return (
     <section
@@ -20,32 +20,32 @@ export const Contact = ({
         </div>
         <div className="btnContainer">
           <p>
-            Feel free to check out my Github and LinkedIn. You can contact me by
+            Feel free to check out my Github and LinkedIn. Contact me by
             sending an email.
           </p>
           <button
             className="btn"
             id="github-btn"
-            onClick={() => window.open(github)}
+            onClick={() => window.open(componentData.github)}
           >
-            Go to Github
+            Github
           </button>
           <button
             className="btn"
             id="linkedIn-btn"
-            onClick={() => window.open(linkedIn)}
+            onClick={() => window.open(componentData.linkedIn)}
           >
-            Go to LinkedIn
+            LinkedIn
           </button>
           <button
             className="btn"
             id="linkedIn-btn"
             onClick={(e) => {
-              window.location.href = 'mailto:magdalena.matusiak88@gmail.com';
+              window.location.href = `mailto:${componentData.email}`;
               e.preventDefault();
             }}
           >
-            Send me an email
+            Email
           </button>
         </div>
       </div>

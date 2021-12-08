@@ -1,14 +1,6 @@
 import '../../App.scss';
 import './objective.component.scss';
-
-export interface ObjectiveProps {
-  title: string;
-  componentData: {
-    objectiveInformation: string;
-  };
-  index: number;
-  objectiveRef: any;
-}
+import { ObjectiveProps } from '../../modules/content/content.state';
 
 export const Objective = ({
   componentData,
