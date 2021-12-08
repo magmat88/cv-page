@@ -1,9 +1,5 @@
 export interface HeaderProps extends NavBarProps {
-	data: {
-		name: string;
-		position: string;
-		linkToCv: string;
-	};
+	//
 	components: any[];
 }
 
@@ -34,9 +30,9 @@ export interface ComponentData {
 export interface AboutMeProps {
 	title: string;
 	index: number;
-	about: string;
-	image: string;
 	aboutMeRef: any;
+	about: string;
+	linkToCV: string;
 }
 
 export interface ContactProps {
