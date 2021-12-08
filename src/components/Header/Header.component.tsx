@@ -4,7 +4,6 @@ import { NavBar } from "./navBar.component";
 import { HeaderProps } from "../../modules/content/content.state";
 
 export const Header = ({
-	data: { name, position, linkToCv },
 	aboutMeRef,
 	objectiveRef,
 	educationRef,
@@ -16,8 +15,6 @@ export const Header = ({
 		<section className="styledHeader">
 			<div className="headerItem">
 				<div className="nameItem">
-					<h2>{name}</h2>
-					<p>{position}</p>
 					<p>
 						<i
 							className="fa fa-file-download"
@@ -25,7 +22,7 @@ export const Header = ({
 						></i>
 					</p>
 				</div>
-				<div className="cvBtn">
+				{/* <div className="cvBtn">
 					<button
 						className="navBtn"
 						id="cv-btn"
@@ -33,7 +30,7 @@ export const Header = ({
 					>
 						{"↓ My CV"}
 					</button>
-				</div>
+				</div> */}
 			</div>
 			<div className="navigation-item">
 				<NavBar

@@ -15,7 +15,6 @@ function App() {
 	return (
 		<div className="styledApp">
 			<Header
-				data={cvData.header}
 				components={cvData.components}
 				aboutMeRef={aboutMeRef}
 				objectiveRef={objectiveRef}
