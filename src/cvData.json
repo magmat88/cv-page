@@ -1,153 +1,84 @@
 {
-  "header": {
-    "name": "Magdalena Matusiak",
-    "position": "Junior Frontend Developer",
-    "linkToCv": "https://drive.google.com/file/d/1HyjULycIfjQ_2xteQqrss8QA6JNB9OrP/view?usp=sharing"
-  },
-  "components": [
-    {
-      "type": "aboutMe",
-      "title": "About me",
-      "componentData": {
-        "about": "My name is Magdalena. Welcome to my CV page made in ReactJS/ TypeScript.",
-        "showCvImg": false,
-        "cvImg": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-      },
-      "ref": null
-    },
-    {
-      "type": "objective",
-      "title": "Objective",
-      "componentData": [{
-        "objectiveInformation": "Over 9 years of experience in quality control in FMCG industry, where the advantages were analytical thinking, inquisitiveness and conscientiousness. Highly motivated, open-minded person. For last months intensively improved skills of web design, web development and learned software testing fundamentals. Currently I am looking for the new opportunities."
-      }],
-      "ref": null
-    },
-    {
-      "type": "education",
-      "title": "Education",
-      "componentData": [
-        {
-          "degree": "Master of Engineering",
-          "university": "Wroclaw University of Technology",
-          "location": "Wroclaw",
-          "department": "Chemistry",
-          "startYear": "2007",
-          "startMonth": "October",
-          "endYear": "2012",
-          "endMonth": "July",
-          "showExtraInformation": false,
-          "extraInformation": ["Graduated with honors"]
-        },
-        {
-          "degree": "Completed certifications",
-          "university": "freeCodeCamp",
-          "location": "online",
-          "department": null,
-          "startYear": null,
-          "startMonth": null,
-          "endYear": "2021",
-          "endMonth": "July",
-          "showExtraInformation": false,
-          "extraInformation": [
-            "Responsive Web Design",
-            "JS Algorithms and componentData Structures"
-          ]
-        }
-      ],
-      "ref": null
-    },
-    {
-      "type": "Experience",
-      "title": "Experience",
-      "componentData": [
-        {
-          "company": "US Pharmacia",
-          "companyLogo": "https://www.uspzdrowie.pl/img/logo-word.png",
-          "title": "Analytical Chemist",
-          "department": "Quality Control",
-          "startYear": "2012",
-          "startMonth": "June",
-          "endYear": null,
-          "endMonth": null,
-          "showCompanyName": false,
-          "showCompanyLogo": false,
-          "extraInformation": "On maternity leave from February 2021 to present",
-          "showResponsibilities": false,
-          "responsibilities": [
-            "Performed and documented chemical analysis of raw materials, reported results with SAP",
-            "Performed implementation and validation of analytical methods",
-            "Created and updated internal standard operation procedures, instructions and guides",
-            "Participated in OOS results investigations, determined root causes and corrective actions",
-            "Developed calibrations and configured routine measurement applications in NIRCal and NIRWare chemometric software suite"
-          ],
-          "keywordsResponsibilities": [
-            "Reporting results",
-            "Validations",
-            "Creating and working with documentation",
-            "Lean management tools in practice",
-            "Calibrations in chemometric software"
-          ]
-        }
-      ],
-      "ref": null
-    },
-    {
-      "type": "skills",
-      "title": "Skills",
-      "componentData": [
-        {
-          "skillName": "JavaScript",
-          "skillIconName": "fab fa-html5"
-        },
-        {
-          "skillName": "HTML5",
-          "skillIconName": "fab fa-html5"
-        },
-        {
-          "skillName": "CSS",
-          "skillIconName": "fab fa-html5"
-        },
-        {
-          "skillName": "SASS",
-          "skillIconName": "fab fa-html5"
-        },
-        {
-          "skillName": "GIT",
-          "skillIconName": "fab fa-html5"
-        },
-        {
-          "skillName": "TypeScript",
-          "skillIconName": "fab fa-html5"
-        },
-        {
-          "skillName": "ReactJS",
-          "skillIconName": "fab fa-html5"
-        },
-        {
-          "skillName": "Software Testing Fundamentals",
-          "skillIconName": "fab fa-html5"
-        },
-        {
-          "skillName": "Lean Management Tools",
-          "skillIconName": "fab fa-html5"
-        },
-        {
-          "skillName": "English",
-          "skillIconName": "fab fa-html5"
-        }
-      ],
-      "ref": null
-    },
-    {
-      "type": "contact",
-      "title": "Contact",
-      "componentData": [
-        {"github": "https://github.com/magmat88"},
-        {"linkedIn": "https://www.linkedin.com/in/magdalena-matusiak-330072a6"},
-        {"email": "magdalena.matusiak88@gmail.com"}
-      ],
-      "ref": null
-    }
-  ]
+	"header": {
+		"name": "Magdalena Matusiak",
+		"position": "Junior Frontend Developer",
+		"linkToCv": "https://drive.google.com/file/d/1HyjULycIfjQ_2xteQqrss8QA6JNB9OrP/view?usp=sharing"
+	},
+	"components": [
+		{
+			"type": "aboutMe",
+			"title": "About me",
+			"ref": null,
+			"about": "My name is Magdalena. Welcome to my CV page made in ReactJS/ TypeScript.",
+			"image": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+		},
+		{
+			"type": "objective",
+			"title": "Objective",
+			"ref": null,
+			"objectiveInformation": "Over 9 years of experience in quality control in FMCG industry, where the advantages were analytical thinking, inquisitiveness and conscientiousness. Highly motivated, open-minded person. For last months intensively improved skills of web design, web development and learned software testing fundamentals. Currently I am looking for the new opportunities."
+		},
+		{
+			"type": "education",
+			"title": "Education",
+			"ref": null,
+			"degree": "Master of Engineering",
+			"department": "Chemistry",
+			"endDate": "2012",
+			"extraInformation": ["Graduated with honors"],
+			"startDate": "2007",
+			"university": "Wroclaw University of Technology",
+		},
+		{
+			"type": "Experience",
+			"title": "Experience",
+			"ref": null,
+			"company": "US Pharmacia",
+			"companyLogo": "https://www.uspzdrowie.pl/img/logo-word.png",
+			"position": "Analytical Chemist",
+			"department": "Quality Control",
+			"startDate": "June 2012",
+			"endDate": "present",
+			"extraInformation": "On maternity leave to February 2022",
+			"responsibilities": [
+				"Performed and documented chemical analysis of raw materials, reported results with SAP",
+				"Performed implementation and validation of analytical methods",
+				"Created and updated internal standard operation procedures, instructions and guides",
+				"Participated in OOS results investigations, determined root causes and corrective actions",
+				"Developed calibrations and configured routine measurement applications in chemometric software suite"
+			],
+			"earnedSkills": [
+				"Working with documentation",
+				"Performing validations",
+				"Implementations of new methods",
+				"Lean management tools in practice - problem solving, 5Why, Ishikawa Diagram",
+				"Working with big database in chemometric software"
+			]
+		},
+		{
+			"type": "skills",
+			"title": "Skills",
+			"ref": null,
+			"skills": [
+				"JavaScript",
+				"HTML5",
+				"CSS",
+				"SASS",
+				"GIT",
+				"TypeScript",
+				"ReactJS",
+				"Software Testing Fundamentals",
+				"Lean Management Tools",
+				"English B2 with ACERT academic certificate"
+			]
+		},
+		{
+			"type": "contact",
+			"title": "Contact",
+			"ref": null,
+			"github": "https://github.com/magmat88",
+			"linkedIn": "https://www.linkedin.com/in/magdalena-matusiak-330072a6",
+			"email": "magdalena.matusiak88@gmail.com"
+		}
+	]
 }

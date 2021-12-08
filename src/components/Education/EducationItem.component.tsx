@@ -6,17 +6,13 @@ import { EducationItemProps } from "../../modules/content/content.state";
 export const EducationItem = ({
 	degree,
 	department,
-	endMonth,
-	endYear,
+	endDate,
 	extraInformation,
-	location,
-	startMonth,
-	startYear,
-	university,
-	showExtraInformation,
+	startDate,
+	university
 }: EducationItemProps) => {
 	const [extraInformationVisible, setExtraInformationVisible] =
-		useState(showExtraInformation);
+		useState(false);
 	return (
 		<div className="styledItem">
 			<div className="btnContainter">
@@ -31,17 +27,15 @@ export const EducationItem = ({
 				</button>
 			</div>
 			<h3>
-				{university} | {location}
+				{university}
 			</h3>
 			<p>
-				{startMonth !== null
-					? `from ${startMonth} ${startYear} `
-					: null}
-				{endMonth !== null ? `to ${endMonth} ${endYear}` : "To present"}
+				{startDate}
+				{endDate !== null ? `to ${endDate}` : "To present"}
 			</p>
 			<br />
 			<h4>
-				{degree} {department !== null ? `in ${department}` : null}
+				`${degree} in ${department}`
 			</h4>
 			<br />
 			<div className={extraInformationVisible ? "show" : "hide"}>

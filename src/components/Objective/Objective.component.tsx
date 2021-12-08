@@ -3,10 +3,10 @@ import './objective.component.scss';
 import { ObjectiveProps } from '../../modules/content/content.state';
 
 export const Objective = ({
-  componentData,
   title,
   index,
   objectiveRef,
+  objectiveInformation
 }: ObjectiveProps) => {
   return (
     <section
@@ -18,7 +18,7 @@ export const Objective = ({
         <div className="styledTitle">
           <h1>{title}</h1>
         </div>
-        <p>{componentData.objectiveInformation}</p>
+        <p>{objectiveInformation}</p>
       </div>
     </section>
   );
