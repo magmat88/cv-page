@@ -33,14 +33,14 @@ export interface AboutMeProps {
 	aboutMeRef: any;
 	about: string;
 	linkToCV: string;
+	github: string;
+	linkedIn: string;
 }
 
 export interface ContactProps {
 	title: string;
 	index: number;
 	contactRef: any;
-	github: string;
-	linkedIn: string;
 	email: string;
 }
 
@@ -96,5 +96,5 @@ export interface ObjectiveProps {
 	title: string;
 	index: number;
 	objectiveRef: any;
-	objectiveInformation: string;
+	objective: string;
 }

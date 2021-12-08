@@ -1,55 +1,25 @@
-import "../../App.scss";
+import contactImg from "../../images/contact/contactImg.jpg";
 import "./contact.component.scss";
 import { ContactProps } from "../../modules/content/content.state";
 
-export const Contact = ({
-	title,
-	index,
-	contactRef,
-	github,
-	linkedIn,
-	email,
-}: ContactProps) => {
+export const Contact = ({ title, index, contactRef, email }: ContactProps) => {
 	return (
 		<section
-			className="styledComponent"
+			className="contact-container"
 			id={`#component-${index}`}
 			ref={contactRef}
 		>
-			<div className="styledItem">
-				<div className="styledTitle">
-					<h1>{title}</h1>
-				</div>
-				<div className="btnContainer">
-					<p>
-						place for 'contact me' information
-					</p>
-					<button
-						className="btn"
-						id="github-btn"
-						onClick={() => window.open(github)}
-					>
-						Github
-					</button>
-					<button
-						className="btn"
-						id="linkedIn-btn"
-						onClick={() => window.open(linkedIn)}
-					>
-						LinkedIn
-					</button>
-					<button
-						className="btn"
-						id="linkedIn-btn"
-						onClick={(e) => {
-							window.location.href = `mailto:${email}`;
-							e.preventDefault();
-						}}
-					>
-						Email
-					</button>
-				</div>
+			<h1>{title}</h1>
+			<div className="contact-content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				<button
+					onClick={(e) => {
+						window.location.href = `mailto:${email}`;
+						e.preventDefault();
+					}}
+				>Email</button>
 			</div>
+			<figure className="contact-img"><img src={contactImg} alt="contact-pic" /></figure>
 		</section>
 	);
 };

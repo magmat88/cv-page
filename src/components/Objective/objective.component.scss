@@ -2,29 +2,29 @@
 @import '../../styles/placeholders.scss';
 @import '../../styles/variables/variables.scss';
 
-.styledComponent {
-    @extend %columnCentered;
-    @extend %marginZero;
-    @extend %paddingMedium;
-    @extend %paletteMedium;
-    @include showHide;
-    position: relative;
-    width: 100%;
+.objective-container {
+    @extend %rowSpaceBetween;
+    @extend %marginStandard;
+    @extend %paddingStandard;
 }
 
-.styledItem {
+.objective-content {
     @extend %columnSpaceBetween;
-    @extend %marginMedium;
-    @extend %paddingMedium;
-    @extend %paletteLight;
-    @include showHide;
-    width: 100%;
+    @extend %marginStandard;
+    @extend %paddingStandard;
+    width: 60%;
 }
 
-.styledTitle {
-    @extend %columnCentered;
-    @extend %marginMedium;
-    @extend %paddingMedium;
-    @extend %paletteMedium;
+.objective-img {
+    height: 220px;
+    margin: 10px 0 10px 10px;
+    // position: relative;
+    width: 40%;
+}
+
+img {
+    height: 280px;
+    max-height: 100%;
+    object-fit: cover;
     width: 100%;
 }

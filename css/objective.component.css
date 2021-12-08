@@ -1,20 +1,4 @@
-.styledComponent, .styledTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.styledItem {
+.objective-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,53 +14,44 @@
           justify-content: space-between;
 }
 
-.styledComponent {
-  margin: 0px;
+.objective-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.styledItem, .styledTitle {
-  margin: 20px;
+.objective-container, .objective-content {
+  margin: 10px;
 }
 
-.styledComponent, .styledItem, .styledTitle {
-  padding: 20px;
+.objective-container, .objective-content {
+  padding: 10px;
 }
 
-.styledItem {
-  background-color: #e0dede;
-  color: #252422;
+.objective-content {
+  width: 60%;
 }
 
-.styledComponent, .styledTitle {
-  background-color: #c9c8c6;
-  color: #252422;
+.objective-img {
+  height: 220px;
+  margin: 10px 0 10px 10px;
+  width: 40%;
 }
 
-.styledComponent {
-  position: relative;
-  width: 100%;
-}
-
-.styledComponent .show {
-  display: block;
-}
-
-.styledComponent .hide {
-  display: none;
-}
-
-.styledItem {
-  width: 100%;
-}
-
-.styledItem .show {
-  display: block;
-}
-
-.styledItem .hide {
-  display: none;
-}
-
-.styledTitle {
+img {
+  height: 280px;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }

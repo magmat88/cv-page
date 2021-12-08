@@ -1,24 +1,25 @@
-import '../../App.scss';
 import './objective.component.scss';
+import objectiveImg from '../../images/objective/objectiveImg.jpg';
 import { ObjectiveProps } from '../../modules/content/content.state';
 
 export const Objective = ({
   title,
   index,
   objectiveRef,
-  objectiveInformation
+  objective
 }: ObjectiveProps) => {
   return (
     <section
-      className="styledComponent"
+      className="objective-container"
       id={`#component-${index}`}
       ref={objectiveRef}
     >
-      <div className="styledItem">
-        <div className="styledTitle">
-          <h1>{title}</h1>
-        </div>
-        <p>{objectiveInformation}</p>
+      <h1>{title}</h1>
+      <figure className="objective-img">
+        <img src={objectiveImg} alt="objective-pic" />
+      </figure>
+      <div className="objective-content">
+        <p>{objective}</p>
       </div>
     </section>
   );
