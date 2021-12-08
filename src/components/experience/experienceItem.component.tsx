@@ -5,34 +5,28 @@ import { ExperienceItemProps } from "../../modules/content/content.state";
 export const ExperienceItem = ({
   company,
   companyLogo,
-  title,
   department,
-  startYear,
-  startMonth,
-  endYear,
-  endMonth,
-  showCompanyName,
-  showCompanyLogo,
+  startDate,
+  endDate,
   extraInformation,
-  showResponsibilities,
   responsibilities,
 }: ExperienceItemProps) => {
   return (
     <div className="styledItem">
-      <div className={showCompanyName ? 'show' : 'hide'}>
-        <h3>
+      {/* <div className={showCompanyName ? 'show' : 'hide'}> */}
+        {/* <h3>
           {company} | {department}
         </h3>
-      </div>
+      </div> */}
 
-      <div className={showCompanyLogo ? 'show' : 'hide'}>
-        <img src={companyLogo} alt="company-logo" />
-      </div>
+      {/* // <div className={showCompanyLogo ? 'show' : 'hide'}>
+      //   <img src={companyLogo} alt="company-logo" />
+      // </div>
 
       <h3>{title}</h3>
       <p>
-        {startMonth ? `from ${startMonth} ${startYear} ` : null}
-        {endMonth ? `to ${endMonth} ${endYear}` : 'To present'}
+        {startDate}
+        {endDate ? `to ${endDate}` : 'To present'}
       </p>
       <br />
       <p>
@@ -47,9 +41,9 @@ export const ExperienceItem = ({
                 <li>{item}</li>
               </ul>
             );
-          })}
-        </div>
-      </div>
+          })} */}
+        {/* </div>
+      </div> */}
     </div>
   );
 };
