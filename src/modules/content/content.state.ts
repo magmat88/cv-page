@@ -26,44 +26,40 @@ export enum Component {
 }
 
 export interface ComponentData {
-    type: string;
-    title: string;
-    componentData: any[];
-    ref: any;
+	title: string;
+	componentData: any[];
+	ref: any;
 }
 
 export interface AboutMeProps {
-    title: string;
-    index: number;
-    componentData: {
-      about: string;
-      showCvImg: boolean;
-      cvImg: string;
-    };
-    aboutMeRef: any;
-  }
+	title: string;
+	index: number;
+	componentData: AboutMeItemProps[];
+	aboutMeRef: any;
+}
+
+export interface AboutMeItemProps {
+	about: string;
+	showCvImg: boolean;
+	cvImg: string;
+}
 
 export interface ContactProps {
 	title: string;
 	index: number;
+	componentData: ContactItemProps[];
 	contactRef: any;
 }
 
-export interface EducationProps extends EducationItemProps {
-	componentData: {
-		degree: string;
-		university: string;
-		location: string;
-		department: string;
-		startYear: string | null;
-		startMonth: string | null;
-		endYear: string | null;
-		endMonth: string | null;
-		showExtraInformation: boolean;
-		extraInformation: any[];
-	}[];
+export interface ContactItemProps {
+	github: string;
+	linkedIn: string;
+	email: string;
+}
+
+export interface EducationProps {
+	componentData: EducationItemProps[];
 	title: string;
-	type: string;
 	index: number;
 	educationRef: any;
 	showExtraInformation: boolean;
@@ -83,7 +79,7 @@ export interface EducationItemProps {
 }
 
 export interface ExperienceProps {
-	componentData: any;
+	componentData: ExperienceItemProps[];
 	title: string;
 	index: number;
 	experienceRef: any;
@@ -109,4 +105,25 @@ export interface ExperienceItemProps {
 export interface FooterProps {
 	aboutPage: string;
 	author: string;
+}
+
+export interface SkillsProps {
+	componentData: SkillsItemProps[];
+	title: string;
+	index: number;
+	skillsRef: any;
+}
+
+export interface SkillsItemProps {
+	skillName: string;
+	skillIconName: string;
+}
+
+export interface ObjectiveProps {
+	title: string;
+	componentData: {
+		objectiveInformation: string;
+	};
+	index: number;
+	objectiveRef: any;
 }

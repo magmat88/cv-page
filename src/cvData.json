@@ -142,10 +142,11 @@
     {
       "type": "contact",
       "title": "Contact",
-      "componentData": [{
-        "github": "https://github.com/magmat88",
-        "linkedIn": "https://www.linkedin.com/in/magdalena-matusiak-330072a6"
-      }],
+      "componentData": [
+        {"github": "https://github.com/magmat88"},
+        {"linkedIn": "https://www.linkedin.com/in/magdalena-matusiak-330072a6"},
+        {"email": "magdalena.matusiak88@gmail.com"}
+      ],
       "ref": null
     }
   ]
