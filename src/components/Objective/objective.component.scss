@@ -3,28 +3,49 @@
 @import '../../styles/variables/variables.scss';
 
 .objective-container {
-    @extend %rowSpaceBetween;
-    @extend %marginStandard;
-    @extend %paddingStandard;
+    @extend %marginZero;
+    @extend %paddingLarge;
+    @extend %paletteLight;
+    @extend %columnCentered;
+    font-size: 0.9rem;
+    width: 100%;
+
+    @include forLargeScreens($breakpoint-medium) {
+        flex-direction: row-reverse;
+    }
 }
 
 .objective-content {
-    @extend %columnSpaceBetween;
-    @extend %marginStandard;
-    @extend %paddingStandard;
-    width: 60%;
+    @extend %paddingMedium;
+    width: 100%;
 }
 
 .objective-img {
-    height: 220px;
-    margin: 10px 0 10px 10px;
-    // position: relative;
-    width: 40%;
+    @extend %rowCentered;
+    height: 250px;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.content-header {
+    @extend %paddingMedium;
+}
+
+.content-text {
+    @extend %paddingMedium;
+}
+
+h1 {
+    font-size: 2rem;
+    @extend %paddingMedium;
+
 }
 
 img {
-    height: 280px;
-    max-height: 100%;
-    object-fit: cover;
-    width: 100%;
+    @include setImageDisplay(5px, 280px, 100%);
+    margin: 60px;
+
+    @include forLargeScreens($breakpoint-medium) {
+        margin: 20px;
+    }
 }

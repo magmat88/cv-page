@@ -50,6 +50,9 @@
 %paddingMedium {
     padding: 20px;
 }
+%paddingLarge {
+    padding: 40px;
+}
 
 %paletteDark {
     background-color: $color_background-dark;
@@ -62,6 +65,10 @@
 %paletteLight {
     background-color: $color_background-light;
     color: $color_text-dark;
+}
+%paletteLightContrast {
+    background-color: $color_background-light;
+    color: $color_text-contrast;
 }
 %paletteMedium {
     background-color: $color_background-medium-light;
@@ -77,6 +84,8 @@
     @extend %paletteDark;
     padding: 10px;
     margin: 35px;
+    cursor: pointer;
+    
     &:hover {
         padding: 14px;
         @extend %paletteDarkContrast;

@@ -51,11 +51,11 @@
 }
 
 .footer-container {
-  background-color: #252422;
-  color: #e0dede;
+  background-color: #000d53;
+  color: #b1c6ff;
 }
 
-@media (min-width: 991px) {
+@media only screen and (min-width: 991px) {
   .footer-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

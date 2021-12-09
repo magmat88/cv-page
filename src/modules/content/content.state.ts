@@ -48,8 +48,14 @@ export interface EducationProps {
 	title: string;
 	index: number;
 	educationRef: any;
-	university: UniversityProps;
-	programmingSkills: ProgrammingSkillsProps;
+	degree: string;
+	department: string;
+	endDate: string | null;
+	extraInformation: string[];
+	startDate: string;
+	universityName: string;
+	onlineCertifications: string[];
+	onlineCourses: string[];
 }
 
 export interface UniversityProps {
@@ -70,11 +76,20 @@ export interface ExperienceProps {
 	title: string;
 	index: number;
 	experienceRef: any;
+	projects: Project[];
 	work: WorkProps;
-	projects: ProjectsProps;
+	companyName: string;
+	companyLogo: string;
+	department: string;
+	earnedSkills: string[];
+	endDate: string | null;
+	extraInformation: string[];
+	position: string;
+	responsibilities: string[];
+	startDate: string;
 }
 
-export interface WorkProps {
+export type WorkProps = {
 	companyName: string;
 	companyLogo: string;
 	department: string;

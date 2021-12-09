@@ -2,3 +2,38 @@
 @import '../../styles/placeholders.scss';
 @import '../../styles/variables/variables.scss';
 
+.experience-container {
+    @extend %columnSpaceBetween;
+    @extend %marginStandard;
+}
+
+.experience-content {
+    @extend %rowSpaceBetween;
+    width: 60%;
+}
+
+.experience-img {
+    height: 220px;
+    margin: 10px 0 10px 10px;
+    // position: relative;
+    width: 40%;
+}
+
+.experience-items-container {
+
+}
+
+img {
+    height: 280px;
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}

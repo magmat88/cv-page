@@ -25,14 +25,14 @@
 			"degree": "Master of Engineering",
 			"department": "Chemistry",
 			"endDate": "2012",
-			"extraInformation": ["Graduated with honors"],
+			"extraInformation": "Graduated with honors",
 			"startDate": "2007",
 			"universityName": "Wroclaw University of Technology",
-			"onlineCerfitications": ["FCC - Algorithms and Data Structures", "FCC - Responsive Web Development"],
+			"onlineCertifications": ["FCC - Algorithms and Data Structures", "FCC - Responsive Web Development"],
 			"onlineCourses": ["FreeCodeCamp", "Codecademy", "Udemy"]
 		},
 		{
-			"type": "Experience",
+			"type": "experience",
 			"title": "Experience",
 			"ref": null,
 			"companyName": "US Pharmacia",

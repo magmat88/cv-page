@@ -8,6 +8,7 @@ import {
 import educationImg from "../../images/education/educationImg.jpg";
 
 export const University = ({
+	degree,
 	department,
 	endDate,
 	extraInformation,
@@ -18,13 +19,12 @@ export const University = ({
 		<div>
 			<ul>
 				<li>University: {universityName}</li>
+				<li>Degree: {degree}</li>
 				<li>Department: {department}</li>
 				<li>
 					From {startDate} to {endDate ? endDate : "present"}
 				</li>
-				{extraInformation.map((info) => {
-					return <li>{info}</li>;
-				})}
+				<li>{extraInformation}</li>;
 			</ul>
 		</div>
 	);
@@ -36,23 +36,17 @@ export const ProgrammingSkillsEducation = ({
 }: ProgrammingSkillsProps) => {
 	return (
 		<div>
+			<p>Online certifications:</p>
 			<ul>
-				<li>
-					Online certifications:
-					<ul>
-						{onlineCertifications.map((certification) => {
-							return <li>{certification}</li>;
-						})}
-					</ul>
-				</li>
-				<li>
-					Online courses:
-					<ul>
-						{onlineCourses.map((courses) => {
-							return <li>{courses}</li>;
-						})}
-					</ul>
-				</li>
+				{onlineCertifications.map((certifications) => {
+					return <li>{certifications}</li>;
+				})}
+			</ul>
+			<p>Online courses:</p>
+			<ul>
+				{onlineCourses.map((courses) => {
+					return <li>{courses}</li>;
+				})}
 			</ul>
 		</div>
 	);
@@ -62,8 +56,14 @@ export const Education = ({
 	title,
 	index,
 	educationRef,
-	university,
-	programmingSkills,
+	degree,
+	department,
+	endDate,
+	extraInformation,
+	onlineCertifications,
+	onlineCourses,
+	startDate,
+	universityName,
 }: EducationProps) => {
 	const [universityDetailsVisible, setUniversityDetailsVisible] =
 		useState(false);
@@ -78,118 +78,70 @@ export const Education = ({
 			ref={educationRef}
 			id={`component-${index}`}
 		>
-			<div className="education-content">
-				<h1>{title}</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit
-					esse cillum dolore eu fugiat nulla pariatur.
-				</p>
+			<div className="content-top-container">
+				<div className="education-content">
+					<div className="content-header">
+						<h1>{title}</h1>
+					</div>
+					<div className="content-text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua. Ut enim ad minim veniam, quis
+							nostrud exercitation ullamco laboris nisi ut aliquip
+							ex ea commodo consequat. Duis aute irure dolor in
+							reprehenderit in voluptate velit esse cillum dolore
+							eu fugiat nulla pariatur.
+						</p>
+					</div>
+				</div>
+				<div className="education-img">
+					<img src={educationImg} alt="education-pic" />
+				</div>
 			</div>
-			<div className="education-img">
-				<img src={educationImg} alt="education-pic" />
-			</div>
+			
 			<div education-items-container>
 				<button
+					className="btn-container"
 					onClick={() =>
 						setUniversityDetailsVisible(!universityDetailsVisible)
 					}
 				>
-					Master of Engineering degree {universityDetailsVisible ? "-" : "+"}
+					Master of Engineering degree{" "}
+					{universityDetailsVisible ? "-" : "+"}
 				</button>
-				<University
-					degree={university.degree}
-					department={university.department}
-					endDate={university.endDate}
-					extraInformation={university.extraInformation}
-					startDate={university.startDate}
-					universityName={university.universityName}
-				/>
+				<div className={universityDetailsVisible ? "show" : "hide"}>
+					<University
+						degree={degree}
+						department={department}
+						endDate={endDate}
+						extraInformation={extraInformation}
+						startDate={startDate}
+						universityName={universityName}
+					/>
+				</div>
 				<button
+					className="btn-container"
 					onClick={() =>
 						setProgrammingSkillsDetailsVisible(
 							!programmingSkillsDetailsVisible
 						)
 					}
 				>
-					Programming skills education {programmingSkillsDetailsVisible ? "-" : "+"}
+					Programming skills education{" "}
+					{programmingSkillsDetailsVisible ? "-" : "+"}
 				</button>
-				<ProgrammingSkillsEducation
-					onlineCertifications={
-						programmingSkills.onlineCertifications
+				<div
+					className={
+						programmingSkillsDetailsVisible ? "show" : "hide"
 					}
-					onlineCourses={programmingSkills.onlineCourses}
-				/>
+				>
+					<ProgrammingSkillsEducation
+						onlineCertifications={onlineCertifications}
+						onlineCourses={onlineCourses}
+					/>
+				</div>
 			</div>
 		</section>
 	);
 };
-
-// return (
-// <div className="styledItem">
-// 	<div className="btnContainter">
-/* <button
-					className="btn"
-					onClick={() =>
-						setExtraInformationVisible(!extraInformationVisible)
-					}
-				>
-					{extraInformationVisible ? "Hide" : "Show"} extra
-					information
-				</button> */
-// 			</div>
-// 			<h3>
-// 				{university}
-// 			</h3>
-// 			<p>
-// 				{startDate}
-// 				{endDate !== null ? `to ${endDate}` : "To present"}
-// 			</p>
-// 			<br />
-// 			<h4>
-// 				`${degree} in ${department}`
-// 			</h4>
-// 			<br />
-// 			<div className={extraInformationVisible ? "show" : "hide"}>
-// 				{extraInformation.map((item) => {
-// 					return (
-// 						<ul>
-// 							<li>{item}</li>
-// 						</ul>
-// 					);
-// 				})}
-// 			</div>
-// 		</div>
-// 	);
-// };
-
-// export const Education = ({
-// 	title,
-// 	index,
-// 	educationRef,
-// }: EducationProps) => {
-// 	return (
-// 		<section
-// 			className="styledComponent"
-// 			id={`#component-${index}`}
-// 			ref={educationRef}
-// 		>
-// 			<div className="styledItem">
-// 				<div className="styledTitle">
-// 					<h1>{title}</h1>
-// 				</div>
-// 					{/* <EducationItem
-// 						degree={degree}
-// 						university={educationItem.university}
-// 						department={educationItem.department}
-// 						startDate={educationItem.startDate}
-// 						endDate={educationItem.endDate}
-// 						extraInformation={educationItem.extraInformation}
-// 					/> */}
-// 			</div>
-// 		</section>
-// 	);
-// };
