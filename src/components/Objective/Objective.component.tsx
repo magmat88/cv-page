@@ -1,5 +1,6 @@
 import objectiveImg from '../../images/objective/objectiveImg.jpg';
 import { ObjectiveProps } from '../../modules/content/content.state';
+import "./objective.component.scss";
 
 export const Objective = ({
   title,

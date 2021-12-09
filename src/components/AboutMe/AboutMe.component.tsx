@@ -1,11 +1,10 @@
 import aboutMeImg from "../../images/aboutMe/aboutMeImg.jpg";
 import { AboutMeProps } from "../../modules/content/content.state";
+import "./aboutMe.component.scss";
 
 export const AboutMe = ({
-	title,
 	index,
 	aboutMeRef,
-	about,
 	linkToCV,
 	github,
 	linkedIn,

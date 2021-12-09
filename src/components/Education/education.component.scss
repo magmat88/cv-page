@@ -2,42 +2,26 @@
 @import '../../styles/placeholders.scss';
 @import '../../styles/variables/variables.scss';
 
-.styledComponent {
-    @extend %columnCentered;
-    @extend %marginZero;
-    @extend %paddingMedium;
-    @extend %paletteMedium;
-    @include showHide;
-    position: relative;
-    width: 100%;
-}
-
-.styledItem {
-    @extend %columnSpaceBetween;
-    @extend %marginMedium;
-    @extend %paddingMedium;
-    @extend %paletteLight;
-    @include showHide;
-    width: 100%;
-}
-
-.styledTitle {
-    @extend %columnCentered;
-    @extend %marginMedium;
-    @extend %paddingMedium;
-    @extend %paletteMedium;
-    width: 100%;
-}
-
-.btnContainter {
+.education-container {
+    @extend %rowSpaceBetween;
     @extend %marginStandard;
-    @extend %rowCentered;
 }
 
-.btn {
-    @extend %buttonEffect;
-    @extend %paletteDarkContrast;
-    &:hover {
-        background-color: $color_text-active;
-    }
+.education-content {
+    @extend %columnSpaceBetween;
+    width: 60%;
+}
+
+.education-img {
+    height: 220px;
+    margin: 10px 0 10px 10px;
+    // position: relative;
+    width: 40%;
+}
+
+img {
+    height: 280px;
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
