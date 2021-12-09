@@ -1,6 +1,4 @@
-// import { useState } from 'react';
 import aboutMeImg from "../../images/aboutMe/aboutMeImg.jpg";
-import "./aboutMe.component.scss";
 import { AboutMeProps } from "../../modules/content/content.state";
 
 export const AboutMe = ({

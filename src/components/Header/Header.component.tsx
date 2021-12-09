@@ -1,4 +1,3 @@
-import "../../App.scss";
 import "./header.component.scss";
 import { NavBar } from "./navBar.component";
 import { HeaderProps } from "../../modules/content/content.state";
