@@ -1,4 +1,3 @@
-import './objective.component.scss';
 import objectiveImg from '../../images/objective/objectiveImg.jpg';
 import { ObjectiveProps } from '../../modules/content/content.state';
 
