@@ -81,12 +81,12 @@
 
 .styledHeader, .navBtn {
   background-color: #000d53;
-  color: #b1c6ff;
+  color: #d7e2ff;
 }
 
 .navBtn:hover {
   background-color: #000d53;
-  color: #ffae00;
+  color: #ff7300;
 }
 
 @media only screen and (min-width: 991px) {
@@ -141,10 +141,10 @@
 
 .nameItem h2 {
   font-size: 1em;
-  color: #ffae00;
+  color: #ff7300;
 }
 
 .nameItem p {
   font-size: 0.9em;
-  color: #8aacf0;
+  color: #b1c6ff;
 }

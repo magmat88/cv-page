@@ -1,6 +1,7 @@
 import aboutMeImg from "../../images/aboutMe/aboutMeImg.jpg";
 import { AboutMeProps } from "../../modules/content/content.state";
 import "./aboutMe.component.scss";
+import {ReactComponent as GithubLogo} from "../../icons/githubIcon.svg";
 
 export const AboutMe = ({
 	index,
@@ -35,7 +36,7 @@ export const AboutMe = ({
 				</div>
 				<div className="btn-container">
 					<button className="btn" onClick={() => window.open(github)}>
-						Github
+						<GithubLogo />
 					</button>
 					<button
 						className="btn"

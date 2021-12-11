@@ -14,7 +14,23 @@
           justify-content: center;
 }
 
-.btn-container, .education-img {
+.education-items-container, .item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.education-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,50 +46,69 @@
           justify-content: center;
 }
 
-.btn-container, .content-top-container {
+.btn-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.education-container {
   margin: 0px;
 }
 
-.btn-container {
-  padding: 0px;
+.btn-item, .education-items-container, p {
+  margin: 20px;
 }
 
-.content-header, .content-text, .content-top-container, .education-content {
+ul li {
+  padding: 10px;
+}
+
+.content-header, .content-text, .education-container, .education-content {
   padding: 20px;
 }
 
-.btn {
+.btn-item {
   background-color: #000d53;
   color: #d7e2ff;
 }
 
-.btn:hover {
-  background-color: #000d53;
-  color: #ff7300;
-}
-
-.content-top-container {
+.education-container {
   background-color: #b1c6ff;
   color: #000d53;
 }
 
-.btn {
-  border: 1px;
-  padding: 10px;
-  margin: 35px;
+.btn-item {
+  border-radius: 5px;
+  height: auto;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border: none;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  font-size: 0.9rem;
+}
+
+.btn-item:active {
+  color: #b1c6ff;
+}
+
+.btn-item:hover {
+  color: #ff7300;
   cursor: pointer;
-}
-
-.btn:hover {
-  padding: 14px;
-  margin: 30px;
-  border: 2px;
-}
-
-.btn {
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
 }
 
 .content-top-container {
@@ -97,6 +132,19 @@
 .education-img {
   height: 250px;
   width: 100%;
+}
+
+.education-items-container {
+  width: 80%;
+}
+
+@media only screen and (min-width: 991px) {
+  .education-items-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .show {
@@ -132,4 +180,16 @@ img {
   img {
     margin: 20px;
   }
+}
+
+p strong {
+  color: #3702d6;
+  text-decoration: underline;
+}
+
+ul li {
+  margin: 10px 0 0 40px;
+  width: 100%;
+  list-style: none;
+  font-size: 0.9rem;
 }

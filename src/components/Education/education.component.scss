@@ -1,18 +1,13 @@
-@import '../../styles/mixins.scss';
-@import '../../styles/placeholders.scss';
-@import '../../styles/variables/variables.scss';
+@import "../../styles/mixins.scss";
+@import "../../styles/placeholders.scss";
+@import "../../styles/variables/variables.scss";
 
-.btn-container {
-    @extend %rowCentered;
-    @extend %marginZero;
-    @extend %paddingZero;
-}
-
-.btn {
-    @extend %buttonEffect;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
+.btn-item {
+    @extend %rowSpaceBetween;
+    @extend %marginMedium;
+    @include setImageDisplay(5px, auto, 100%);
+    @include setLinkDark;
+    font-size: 0.9rem;
 }
 
 .content-header {
@@ -24,9 +19,6 @@
 }
 
 .content-top-container {
-    @extend %marginZero;
-    @extend %paddingMedium;
-    @extend %paletteMedium;
     @extend %columnCentered;
     font-size: 0.9rem;
     width: 100%;
@@ -38,6 +30,9 @@
 
 .education-container {
     @extend %columnCentered;
+    @extend %paletteMedium;
+    @extend %paddingMedium;
+    @extend %marginZero;
 }
 
 .education-content {
@@ -52,7 +47,16 @@
 }
 
 .education-items-container {
-    
+    @extend %columnSpaceBetween;
+    @extend %marginMedium;
+    width: 80%;
+    @include forLargeScreens($breakpoint-medium) {
+        flex-direction: column;
+    }
+}
+
+.item-container {
+    @extend %columnSpaceBetween;
 }
 
 .show {
@@ -79,4 +83,21 @@ img {
     @include forLargeScreens($breakpoint-medium) {
         margin: 20px;
     }
+}
+
+p {
+    @extend %marginMedium;
+}
+
+p strong {
+    color: $color_text-medium;
+    text-decoration: underline;
+}
+
+ul li {
+    @extend %paddingStandard;
+    margin: 10px 0 0 40px;
+    width: 100%;
+    list-style: none;
+    font-size: 0.9rem;
 }

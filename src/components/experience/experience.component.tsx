@@ -24,44 +24,64 @@ export const Work = ({
 	const [earnedSkillsVisible, setEarnedSkillsVisible] = useState(false);
 
 	return (
-		<div>
-			<div>
-				<ul>
-					<li>Company: {companyName}</li>
-					<li>Department: {department}</li>
-					<li>Position: {position}</li>
-					<li>
-						From {startDate} to {endDate ? endDate : "present"}
-					</li>
-					<li>Additional information: {extraInformation}</li>
-				</ul>
-				<button
-					onClick={() =>
-						setResponsibilitiesVisible(!responsibilitiesVisible)
-					}
-				>
-					{responsibilitiesVisible ? "Hide" : "Show"} responsibilities
-				</button>
-				<ul className={responsibilitiesVisible ? "show" : "hide"}>
+		<div className="item-container">
+			<p>
+				<strong>{companyName}</strong>
+			</p>
+			<ul>
+				<li>{department} department</li>
+				<li>Position: {position}</li>
+				<li>
+					From {startDate} to {endDate ? endDate : "present"}
+				</li>
+				<li>
+					<em>{extraInformation}</em>
+				</li>
+			</ul>
+			<button
+				className="btn-item"
+				onClick={() =>
+					setResponsibilitiesVisible(!responsibilitiesVisible)
+				}
+			>
+				<p>Responsibilities </p>
+				<p>{responsibilitiesVisible ? "-" : "+"}</p>
+			</button>
+			<div
+				className={`subitem-container ${
+					responsibilitiesVisible ? "show" : "hide"
+				}`}
+			>
+				<ul className="list-style-circle">
 					{responsibilities.map((responsibility) => {
 						return <li>{responsibility}</li>;
 					})}
 				</ul>
-				<button
-					onClick={() => setEarnedSkillsVisible(!earnedSkillsVisible)}
-				>
-					{earnedSkillsVisible ? "Hide" : "Show"} earned skills
-				</button>
-				<ul className={earnedSkillsVisible ? "show" : "hide"}>
+				<figure>
+					<img
+						className="logo-img"
+						src={companyLogo}
+						alt="company-logo"
+					/>
+				</figure>
+			</div>
+			<button
+				className="btn-item"
+				onClick={() => setEarnedSkillsVisible(!earnedSkillsVisible)}
+			>
+				<p>Skills earned at work </p>
+				<p>{earnedSkillsVisible ? "-" : "+"}</p>
+			</button>
+			<div
+				className={`subitem-container ${
+					earnedSkillsVisible ? "show" : "hide"
+				}`}
+			>
+				<ul className="list-style-circle">
 					{earnedSkills.map((earnedSkill) => {
 						return <li>{earnedSkill}</li>;
 					})}
 				</ul>
-			</div>
-			<div>
-				<figure>
-					<img src={companyLogo} alt="company-logo" />
-				</figure>
 			</div>
 		</div>
 	);
@@ -77,6 +97,7 @@ export const Projects = ({ projects }: ProjectsProps) => {
 						<p>{project.extraInformation}</p>
 
 						<button
+							className="btn"
 							onClick={() => window.open(project.projectLink)}
 						>
 							Link to {project.projectName}
@@ -123,55 +144,60 @@ export const Experience = ({
 			ref={experienceRef}
 			id={`component-${index}`}
 		>
-			<div className="experience-content">
-				<div>
-					<h1>{title}</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu
-						fugiat nulla pariatur.
-					</p>
+			<div className="content-top-container">
+				<div className="experience-content">
+					<div className="content-header">
+						<h1>{title}</h1>
+					</div>
+					<div className="content-text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua. Ut enim ad minim veniam, quis
+							nostrud exercitation ullamco laboris nisi ut aliquip
+							ex ea commodo consequat. Duis aute irure dolor in
+							reprehenderit in voluptate velit esse cillum dolore
+							eu fugiat nulla pariatur.
+						</p>
+					</div>
 				</div>
 				<div className="experience-img">
 					<img src={experienceImg} alt="experience-pic" />
 				</div>
 			</div>
+
 			<div className="experience-items-container">
-				<div>
-					<button
-						onClick={() =>
-							setWorkDetailsVisible(!workDetailsVisible)
-						}
-					>
-						Work {workDetailsVisible ? "+" : "-"}
-					</button>
-					<div className={workDetailsVisible ? "hide" : "show"}>
-						<Work
-							companyName={companyName}
-							companyLogo={companyLogo}
-							department={department}
-							earnedSkills={earnedSkills}
-							endDate={endDate}
-							extraInformation={extraInformation}
-							position={position}
-							responsibilities={responsibilities}
-							startDate={startDate}
-						/>
-					</div>
-					<button
-						onClick={() =>
-							setProjectsDetailsVisible(!projectsDetailsVisible)
-						}
-					>
-						Projects {projectsDetailsVisible ? "+" : "-"}
-					</button>
-					<div className={projectsDetailsVisible ? "hide" : "show"}>
-						<Projects projects={projects} />
-					</div>
+				<button
+					className="btn-item"
+					onClick={() => setWorkDetailsVisible(!workDetailsVisible)}
+				>
+					<p>Work</p>
+					<p>{workDetailsVisible ? "+" : "-"}</p>
+				</button>
+				<div className={workDetailsVisible ? "hide" : "show"}>
+					<Work
+						companyName={companyName}
+						companyLogo={companyLogo}
+						department={department}
+						earnedSkills={earnedSkills}
+						endDate={endDate}
+						extraInformation={extraInformation}
+						position={position}
+						responsibilities={responsibilities}
+						startDate={startDate}
+					/>
+				</div>
+				<button
+					className="btn-item"
+					onClick={() =>
+						setProjectsDetailsVisible(!projectsDetailsVisible)
+					}
+				>
+					<p>Projects</p>
+					<p>{projectsDetailsVisible ? "+" : "-"}</p>
+				</button>
+				<div className={projectsDetailsVisible ? "hide" : "show"}>
+					<Projects projects={projects} />
 				</div>
 			</div>
 		</section>

@@ -16,15 +16,19 @@ export const University = ({
 	universityName,
 }: UniversityProps) => {
 	return (
-		<div>
+		<div className="item-container">
+			<p>
+				<strong>{universityName}</strong>
+			</p>
+
 			<ul>
-				<li>University: {universityName}</li>
-				<li>Degree: {degree}</li>
-				<li>Department: {department}</li>
+				<li>Department of {department}</li>
 				<li>
 					From {startDate} to {endDate ? endDate : "present"}
 				</li>
-				<li>{extraInformation}</li>;
+				<li>
+					<em>{extraInformation}</em>
+				</li>
 			</ul>
 		</div>
 	);
@@ -35,14 +39,18 @@ export const ProgrammingSkillsEducation = ({
 	onlineCourses,
 }: ProgrammingSkillsProps) => {
 	return (
-		<div>
-			<p>Online certifications:</p>
+		<div className="item-container">
+			<p>
+				<strong>Online certifications:</strong>
+			</p>
 			<ul>
 				{onlineCertifications.map((certifications) => {
 					return <li>{certifications}</li>;
 				})}
 			</ul>
-			<p>Online courses:</p>
+			<p>
+				<strong>Online courses:</strong>
+			</p>
 			<ul>
 				{onlineCourses.map((courses) => {
 					return <li>{courses}</li>;
@@ -99,16 +107,16 @@ export const Education = ({
 					<img src={educationImg} alt="education-pic" />
 				</div>
 			</div>
-			
-			<div education-items-container>
+
+			<div className="education-items-container">
 				<button
-					className="btn-container"
+					className="btn-item"
 					onClick={() =>
 						setUniversityDetailsVisible(!universityDetailsVisible)
 					}
 				>
-					Master of Engineering degree{" "}
-					{universityDetailsVisible ? "-" : "+"}
+					<p>Master of Engineering degree </p>
+					<p>{universityDetailsVisible ? "-" : "+"}</p>
 				</button>
 				<div className={universityDetailsVisible ? "show" : "hide"}>
 					<University
@@ -121,15 +129,15 @@ export const Education = ({
 					/>
 				</div>
 				<button
-					className="btn-container"
+					className="btn-item"
 					onClick={() =>
 						setProgrammingSkillsDetailsVisible(
 							!programmingSkillsDetailsVisible
 						)
 					}
 				>
-					Programming skills education{" "}
-					{programmingSkillsDetailsVisible ? "-" : "+"}
+					<p>Programming skills education </p>
+					<p>{programmingSkillsDetailsVisible ? "-" : "+"}</p>
 				</button>
 				<div
 					className={
