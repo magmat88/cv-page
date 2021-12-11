@@ -128,6 +128,7 @@ export const Education = ({
 						universityName={universityName}
 					/>
 				</div>
+
 				<button
 					className="btn-item"
 					onClick={() =>

@@ -21,15 +21,6 @@ export const Header = ({
 						></i>
 					</p>
 				</div>
-				{/* <div className="cvBtn">
-					<button
-						className="navBtn"
-						id="cv-btn"
-						onClick={() => window.open(linkToCv)}
-					>
-						{"↓ My CV"}
-					</button>
-				</div> */}
 			</div>
 			<div className="navigation-item">
 				<NavBar

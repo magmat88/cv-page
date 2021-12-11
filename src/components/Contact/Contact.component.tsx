@@ -10,6 +10,7 @@ export const Contact = ({ title, index, contactRef, email }: ContactProps) => {
 			ref={contactRef}
 		>
 			<h1>{title}</h1>
+			
 			<div className="contact-content">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 				<button

@@ -22,6 +22,7 @@ export const Objective = ({
 					<p>{objective}</p>
 				</div>
 			</div>
+
 			<figure className="objective-img">
 				<img src={objectiveImg} alt="objective-pic" />
 			</figure>

@@ -23,6 +23,7 @@ export const AboutMe = ({
 						<em>Frontend Developer</em>
 					</h3>
 				</div>
+				
 				<div className="content-text">
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
