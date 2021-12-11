@@ -1,5 +1,5 @@
-import contactImg from "../../images/contact/contactImg.jpg";
 import "./contact.component.scss";
+import contactImg from "../../images/contact/contactImg.jpg";
 import { ContactProps } from "../../modules/content/content.state";
 
 export const Contact = ({ title, index, contactRef, email }: ContactProps) => {

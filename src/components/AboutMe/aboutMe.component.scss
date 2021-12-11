@@ -1,27 +1,66 @@
-@import '../../styles/mixins.scss';
-@import '../../styles/placeholders.scss';
-@import '../../styles/variables/variables.scss';
+@import "../../styles/mixins.scss";
+@import "../../styles/placeholders.scss";
+@import "../../styles/variables/variables.scss";
 
 .about-me-container {
-    @extend %rowSpaceBetween;
-    @extend %marginStandard;
+    @extend %marginZero;
+    @extend %paddingMedium;
+    @extend %paletteMedium;
+    @extend %columnCentered;
+    font-size: 0.9rem;
+    width: 100%;
+
+    @include forLargeScreens($breakpoint-medium) {
+        flex-direction: row;
+    }
 }
 
 .about-me-content {
-    @extend %columnSpaceBetween;
-    width: 60%;
+    @extend %paddingMedium;
+    width: 100%;
 }
 
 .about-me-img {
-    height: 220px;
-    margin: 10px 0 10px 10px;
-    // position: relative;
-    width: 40%;
+    @extend %rowCentered;
+    height: 250px;
+    width: 100%;
+}
+
+.btn-container {
+    @extend %rowCentered;
+    @extend %marginZero;
+    @extend %paddingZero;
+}
+
+.btn {
+    @extend %buttonEffect;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.content-header {
+    @extend %paddingMedium;
+}
+
+.content-text {
+    @extend %paddingMedium;
+}
+
+h1 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.1rem;
 }
 
 img {
-    height: 280px;
-    max-height: 100%;
-    object-fit: cover;
-    width: 100%;
+    @include setImageDisplay(5px, 280px, 100%);
+    margin: 60px;
+
+    @include forLargeScreens($breakpoint-medium) {
+        margin: 20px;
+    }
 }

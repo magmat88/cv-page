@@ -80,16 +80,16 @@
 }
 
 .styledHeader, .navBtn {
-  background-color: #252422;
-  color: #e0dede;
+  background-color: #000d53;
+  color: #d7e2ff;
 }
 
 .navBtn:hover {
-  background-color: #252422;
-  color: #ff7d04;
+  background-color: #000d53;
+  color: #ff7300;
 }
 
-@media (min-width: 991px) {
+@media only screen and (min-width: 991px) {
   .styledHeader {
     height: 170px;
     position: fixed;
@@ -104,7 +104,7 @@
   width: 100%;
 }
 
-@media (min-width: 991px) {
+@media only screen and (min-width: 991px) {
   .navItem,
   .navigation-item {
     -webkit-box-orient: horizontal;
@@ -124,7 +124,7 @@
   width: 100%;
 }
 
-@media (min-width: 991px) {
+@media only screen and (min-width: 991px) {
   .navBtn {
     color: none;
     width: auto;
@@ -141,10 +141,10 @@
 
 .nameItem h2 {
   font-size: 1em;
-  color: #ff7d04;
+  color: #ff7300;
 }
 
 .nameItem p {
   font-size: 0.9em;
-  color: #c9c8c6;
+  color: #b1c6ff;
 }

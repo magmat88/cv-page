@@ -44,37 +44,72 @@ export interface ContactProps {
 	email: string;
 }
 
-export interface EducationProps extends EducationItemProps {
+export interface EducationProps {
 	title: string;
 	index: number;
 	educationRef: any;
-}
-
-export interface EducationItemProps {
 	degree: string;
 	department: string;
 	endDate: string | null;
-	extraInformation: any[];
+	extraInformation: string[];
 	startDate: string;
-	university: string;
+	universityName: string;
+	onlineCertifications: string[];
+	onlineCourses: string[];
 }
 
-export interface ExperienceProps extends ExperienceItemProps {
+export interface UniversityProps {
+	degree: string;
+	department: string;
+	endDate: string | null;
+	extraInformation: string[];
+	startDate: string;
+	universityName: string;
+}
+
+export interface ProgrammingSkillsProps {
+	onlineCertifications: string[];
+	onlineCourses: string[];
+}
+
+export interface ExperienceProps {
 	title: string;
 	index: number;
 	experienceRef: any;
+	projects: Project[];
+	work: WorkProps;
+	companyName: string;
+	companyLogo: string;
+	department: string;
+	earnedSkills: string[];
+	endDate: string | null;
+	extraInformation: string[];
+	position: string;
+	responsibilities: string[];
+	startDate: string;
 }
 
-export interface ExperienceItemProps {
-	company: string;
+export type WorkProps = {
+	companyName: string;
 	companyLogo: string;
-	position: string;
 	department: string;
-	startDate: string;
-	endDate: string | null;
-	extraInformation: string | null;
-	responsibilities: string[];
 	earnedSkills: string[];
+	endDate: string | null;
+	extraInformation: string[];
+	position: string;
+	responsibilities: string[];
+	startDate: string;
+}
+
+export interface ProjectsProps {
+	projects: Project[];
+}
+
+export type Project = {
+	projectName: string;
+	projectLogo: string | null;
+	projectLink: string;
+	extraInformation: string[];
 }
 
 export interface FooterProps {

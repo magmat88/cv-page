@@ -25,20 +25,22 @@
 			"degree": "Master of Engineering",
 			"department": "Chemistry",
 			"endDate": "2012",
-			"extraInformation": ["Graduated with honors"],
+			"extraInformation": "Graduated with honors",
 			"startDate": "2007",
-			"university": "Wroclaw University of Technology"
+			"universityName": "Wroclaw University of Technology",
+			"onlineCertifications": ["FCC - Algorithms and Data Structures", "FCC - Responsive Web Development"],
+			"onlineCourses": ["FreeCodeCamp", "Codecademy", "Udemy"]
 		},
 		{
-			"type": "Experience",
+			"type": "experience",
 			"title": "Experience",
 			"ref": null,
-			"company": "US Pharmacia",
+			"companyName": "US Pharmacia",
 			"companyLogo": "https://www.uspzdrowie.pl/img/logo-word.png",
 			"position": "Analytical Chemist",
 			"department": "Quality Control",
 			"startDate": "June 2012",
-			"endDate": "present",
+			"endDate": null,
 			"extraInformation": "On maternity leave to February 2022",
 			"responsibilities": [
 				"Performed and documented chemical analysis of raw materials, reported results with SAP",
@@ -53,6 +55,20 @@
 				"Implementations of new methods",
 				"Lean management tools in practice - problem solving, 5Why, Ishikawa Diagram",
 				"Working with big database in chemometric software"
+			],
+			"projects": [
+				{
+					"projectName": "CV-data",
+					"projectLogo": null,
+					"projectLink": "https://github.com/magmat88/cv-page",
+					"extraInformation" : ["React, Typescript"]
+				},
+				{
+					"projectName": "Fast start",
+					"projectLogo": null,
+					"projectLink": "https://github.com/earendillo/fast-start",
+					"extraInformation": ["React, Typescript"]
+				}
 			]
 		},
 		{
