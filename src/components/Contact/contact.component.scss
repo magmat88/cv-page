@@ -1,30 +1,107 @@
-@import '../../styles/mixins.scss';
-@import '../../styles/placeholders.scss';
-@import '../../styles/variables/variables.scss';
+@import "../../styles/mixins.scss";
+@import "../../styles/placeholders.scss";
+@import "../../styles/variables/variables.scss";
+
+.btn {
+    @extend %buttonEffect;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.btn-item {
+    @extend %rowSpaceBetween;
+    @extend %marginMedium;
+    @include setImageDisplay(5px, auto, 100%);
+    @include setLinkDark;
+    font-size: 0.9rem;
+}
+
+.content-header {
+    @extend %paddingMedium;
+}
+
+.content-text {
+    @extend %paddingMedium;
+}
+
+.content-top-container {
+    @extend %columnCentered;
+    font-size: 0.9rem;
+    width: 100%;
+
+    @include forLargeScreens($breakpoint-medium) {
+        flex-direction: row;
+    }
+}
 
 .contact-container {
-    @extend %rowSpaceBetween;
-    @extend %marginStandard;
-    @extend %paddingStandard;
+    @extend %columnCentered;
+    @extend %paletteLight;
+    @extend %paddingMedium;
+    @extend %marginZero;
 }
 
 .contact-content {
-    @extend %columnSpaceBetween;
-    @extend %marginStandard;
-    @extend %paddingStandard;
-    width: 60%;
+    @extend %paddingMedium;
+    width: 100%;
 }
 
 .contact-img {
-    height: 220px;
-    margin: 10px 0 10px 10px;
-    // position: relative;
-    width: 40%;
+    @extend %rowCentered;
+    height: 250px;
+    width: 100%;
 }
 
+.contact-item-container {
+    @extend %columnSpaceBetween;
+    @extend %marginMedium;
+    width: 80%;
+    @include forLargeScreens($breakpoint-medium) {
+        flex-direction: column;
+    }
+}
+
+.item-container {
+    @extend %columnSpaceBetween;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+
 img {
-    height: 280px;
-    max-height: 100%;
-    object-fit: cover;
+    @include setImageDisplay(5px, 280px, 100%);
+    margin: 60px;
+
+    @include forLargeScreens($breakpoint-medium) {
+        margin: 20px;
+    }
+}
+
+p {
+    @extend %marginMedium;
+}
+
+p strong {
+    color: $color_text-medium;
+    text-decoration: underline;
+}
+
+ul li {
+    @extend %paddingStandard;
+    margin: 10px 0 0 40px;
     width: 100%;
+    list-style: none;
+    font-size: 0.9rem;
 }

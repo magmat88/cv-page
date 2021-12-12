@@ -44,6 +44,10 @@ export interface ContactProps {
 	email: string;
 }
 
+export interface ContactWaysProps {
+	email: string;
+}
+
 export interface EducationProps {
 	title: string;
 	index: number;
@@ -99,7 +103,7 @@ export type WorkProps = {
 	position: string;
 	responsibilities: string[];
 	startDate: string;
-}
+};
 
 export interface ProjectsProps {
 	projects: Project[];
@@ -110,20 +114,21 @@ export type Project = {
 	projectLogo: string | null;
 	projectLink: string;
 	extraInformation: string[];
-}
+};
 
 export interface FooterProps {
 	aboutPage: string;
 	author: string;
 }
 
-export interface SkillsProps extends SkillsItemProps {
+export interface SkillsProps {
 	title: string;
 	index: number;
 	skillsRef: any;
+	skills: string[];
 }
 
-export interface SkillsItemProps {
+export interface SkillsListProps {
 	skills: string[];
 }
 

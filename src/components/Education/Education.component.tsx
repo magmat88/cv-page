@@ -103,9 +103,9 @@ export const Education = ({
 						</p>
 					</div>
 				</div>
-				<div className="education-img">
+				<figure className="education-img">
 					<img src={educationImg} alt="education-pic" />
-				</div>
+				</figure>
 			</div>
 
 			<div className="education-items-container">
