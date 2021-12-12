@@ -37,7 +37,8 @@ export const AboutMe = ({
 				</div>
 				<div className="btn-container">
 					<button className="btn" onClick={() => window.open(github)}>
-						<GithubLogo />
+						{/* <GithubLogo /> */}
+						Github
 					</button>
 					<button
 						className="btn"

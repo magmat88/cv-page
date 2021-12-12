@@ -1,4 +1,100 @@
-@import '../../styles/mixins.scss';
-@import '../../styles/placeholders.scss';
-@import '../../styles/variables/variables.scss';
+@import "../../styles/mixins.scss";
+@import "../../styles/placeholders.scss";
+@import "../../styles/variables/variables.scss";
 
+.btn-item {
+    @extend %rowSpaceBetween;
+    @extend %marginMedium;
+    @include setImageDisplay(5px, auto, 100%);
+    @include setLinkDark;
+    font-size: 0.9rem;
+}
+
+.content-header {
+    @extend %paddingMedium;
+}
+
+.content-text {
+    @extend %paddingMedium;
+}
+
+.content-top-container {
+    @extend %columnCentered;
+    font-size: 0.9rem;
+    width: 100%;
+
+    @include forLargeScreens($breakpoint-medium) {
+        flex-direction: row;
+    }
+}
+
+.skills-container {
+    @extend %columnCentered;
+    @extend %paletteMedium;
+    @extend %paddingMedium;
+    @extend %marginZero;
+}
+
+.skills-content {
+    @extend %paddingMedium;
+    width: 100%;
+}
+
+.skills-img {
+    @extend %rowCentered;
+    height: 250px;
+    width: 100%;
+}
+
+.skills-item-container {
+    @extend %columnSpaceBetween;
+    @extend %marginMedium;
+    width: 80%;
+    @include forLargeScreens($breakpoint-medium) {
+        flex-direction: column;
+    }
+}
+
+.item-container {
+    @extend %columnSpaceBetween;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+
+img {
+    @include setImageDisplay(5px, 280px, 100%);
+    margin: 60px;
+
+    @include forLargeScreens($breakpoint-medium) {
+        margin: 20px;
+    }
+}
+
+p {
+    @extend %marginMedium;
+}
+
+p strong {
+    color: $color_text-medium;
+    text-decoration: underline;
+}
+
+ul li {
+    @extend %paddingStandard;
+    margin: 10px 0 0 40px;
+    width: 100%;
+    list-style: circle;
+    font-size: 0.9rem;
+}

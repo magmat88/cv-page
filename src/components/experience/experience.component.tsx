@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../../App.scss";
 import "./experience.component.scss";
 import experienceImg from "../../images/experience/experienceImg.jpg";
 import {
@@ -44,7 +43,7 @@ export const Work = ({
 					setResponsibilitiesVisible(!responsibilitiesVisible)
 				}
 			>
-				<p>Responsibilities </p>
+				<p>Work - Responsibilities </p>
 				<p>{responsibilitiesVisible ? "-" : "+"}</p>
 			</button>
 			<div
@@ -69,7 +68,7 @@ export const Work = ({
 				className="btn-item"
 				onClick={() => setEarnedSkillsVisible(!earnedSkillsVisible)}
 			>
-				<p>Skills earned at work </p>
+				<p>Work - Skills earned at work </p>
 				<p>{earnedSkillsVisible ? "-" : "+"}</p>
 			</button>
 			<div
@@ -145,6 +144,9 @@ export const Experience = ({
 			id={`component-${index}`}
 		>
 			<div className="content-top-container">
+				<figure className="experience-img">
+					<img src={experienceImg} alt="experience-pic" />
+				</figure>
 				<div className="experience-content">
 					<div className="content-header">
 						<h1>{title}</h1>
@@ -160,9 +162,6 @@ export const Experience = ({
 							eu fugiat nulla pariatur.
 						</p>
 					</div>
-				</div>
-				<div className="experience-img">
-					<img src={experienceImg} alt="experience-pic" />
 				</div>
 			</div>
 
