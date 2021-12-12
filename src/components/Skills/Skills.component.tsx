@@ -6,7 +6,6 @@ import {
 } from "../../modules/content/content.state";
 import skillsImg from "../../images/skills/skillsImg.jpg";
 
-
 export const SkillsList = ({ skills }: SkillsListProps) => {
 	return (
 		<div className="item-container">
@@ -56,17 +55,13 @@ export const Skills = ({ title, index, skillsRef, skills }: SkillsProps) => {
 			<div className="skills-item-container">
 				<button
 					className="btn-item"
-					onClick={() =>
-						setSkillsListVisible(!skillsListVisible)
-					}
+					onClick={() => setSkillsListVisible(!skillsListVisible)}
 				>
 					<p>Skills </p>
 					<p>{skillsListVisible ? "-" : "+"}</p>
 				</button>
 				<div className={skillsListVisible ? "show" : "hide"}>
-					<SkillsList
-						skills={skills}
-					/>
+					<SkillsList skills={skills} />
 				</div>
 			</div>
 		</section>

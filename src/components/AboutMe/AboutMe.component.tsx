@@ -1,7 +1,7 @@
 import aboutMeImg from "../../images/aboutMe/aboutMeImg.jpg";
 import { AboutMeProps } from "../../modules/content/content.state";
 import "./aboutMe.component.scss";
-import {ReactComponent as GithubLogo} from "../../icons/githubIcon.svg";
+// import {ReactComponent as GithubLogo} from "../../icons/githubIcon.svg";
 
 export const AboutMe = ({
 	index,

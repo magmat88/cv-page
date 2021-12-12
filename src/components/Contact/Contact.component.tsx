@@ -10,7 +10,7 @@ export const ContactWays = ({ email }: ContactWaysProps) => {
 	return (
 		<div className="item-container">
 			<p>
-				<strong>Ways of contact</strong>
+				<strong>Ways of contact:</strong>
 			</p>
 			<ul>
 				<li>
