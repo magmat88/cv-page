@@ -9,6 +9,7 @@ export const Header = ({
 	experienceRef,
 	skillsRef,
 	contactRef,
+	components
 }: HeaderProps) => {
 	return (
 		<section className="styledHeader">
@@ -24,6 +25,7 @@ export const Header = ({
 			</div>
 			<div className="navigation-item">
 				<NavBar
+					components={components}
 					aboutMeRef={aboutMeRef}
 					objectiveRef={objectiveRef}
 					educationRef={educationRef}

@@ -1,6 +1,11 @@
-export interface HeaderProps extends NavBarProps {
-	//
-	components: any[];
+export interface HeaderProps {
+	components: any[] | any;
+	aboutMeRef: any,
+	objectiveRef: any,
+	educationRef: any,
+	experienceRef: any,
+	skillsRef: any,
+	contactRef: any,
 }
 
 export interface NavBarProps {
@@ -10,6 +15,7 @@ export interface NavBarProps {
 	experienceRef: any;
 	skillsRef: any;
 	contactRef: any;
+	components: any[] | any;
 }
 
 export enum Component {
@@ -23,7 +29,7 @@ export enum Component {
 
 export interface ComponentData {
 	title: string;
-	componentData: any[];
+	// componentData: any[];
 	ref: any;
 }
 

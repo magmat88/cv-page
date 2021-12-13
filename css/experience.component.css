@@ -14,7 +14,8 @@
           justify-content: center;
 }
 
-.experience-items-container, .item-container {
+.content-and-image-container ul, .experience-items-container, .item-container,
+.subitem-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +31,7 @@
           justify-content: space-between;
 }
 
-.experience-img {
+.experience-img, .logo-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +47,7 @@
           justify-content: center;
 }
 
-.btn-item {
+.btn-item, .content-and-image-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,11 +67,11 @@
   margin: 0px;
 }
 
-.btn-item, .experience-items-container, p {
+.btn-item, .experience-items-container, p, .project-container {
   margin: 20px;
 }
 
-ul li {
+.project-container, ul li {
   padding: 10px;
 }
 
@@ -78,14 +79,38 @@ ul li {
   padding: 20px;
 }
 
-.btn-item {
+.btn, .btn-item {
   background-color: #000d53;
   color: #d7e2ff;
 }
 
+.btn:hover {
+  background-color: #000d53;
+  color: #ff7300;
+}
+
 .experience-container {
-  background-color: #b1c6ff;
+  background-color: #d7e2ff;
   color: #000d53;
+}
+
+.btn {
+  border: 1px;
+  padding: 10px;
+  margin: 35px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  padding: 14px;
+  margin: 30px;
+  border: 2px;
+}
+
+.btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
 }
 
 .btn-item {
@@ -119,9 +144,9 @@ ul li {
 @media only screen and (min-width: 991px) {
   .content-top-container {
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
 }
 
@@ -145,6 +170,20 @@ ul li {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.list-style-circle li {
+  list-style: circle;
+}
+
+.logo-img {
+  height: 70px;
+  width: 180px;
+}
+
+.item-container,
+.subitem-container {
+  width: 100%;
 }
 
 .show {

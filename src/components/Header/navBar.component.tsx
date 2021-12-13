@@ -8,6 +8,7 @@ export const NavBar = ({
 	experienceRef,
 	skillsRef,
 	contactRef,
+	components
 }: NavBarProps) => {
 	return (
 		<section className="navItem">
