@@ -1,4 +1,5 @@
 import "./header.component.scss";
+import { useState } from "react";
 import { NavBar } from "./navBar.component";
 import { HeaderProps } from "../../modules/content/content.state";
 
@@ -9,21 +10,30 @@ export const Header = ({
 	experienceRef,
 	skillsRef,
 	contactRef,
-	components
+	components,
 }: HeaderProps) => {
+	const [isMenuVisible, setMenuVisible] = useState(false);
+	const onClickHandler = () => setMenuVisible(!isMenuVisible);
+	const iconVisibilityClass = isMenuVisible ? "animate" : "";
+	const menuVisibilityClass = isMenuVisible ? "visible" : "hiddenIfMobile";
+
 	return (
-		<section className="styledHeader">
-			<div className="headerItem">
-				<div className="nameItem">
-					<p>
-						<i
-							className="fa fa-file-download"
-							aria-hidden="true"
-						></i>
-					</p>
+		
+		<div className="navigation-container">
+			<div className="header-logo-and-icon-container">
+				<div
+					className="hamburger-icon-container"
+					onClick={onClickHandler}
+				>
+					<div
+						className={`hamburger-icon ${iconVisibilityClass}`}
+					></div>
+				</div>
+				<div className="product-name-container">
+					<p>CV Page</p>
 				</div>
 			</div>
-			<div className="navigation-item">
+			<div className={`navbar-container ${menuVisibilityClass}`}>
 				<NavBar
 					components={components}
 					aboutMeRef={aboutMeRef}
@@ -34,6 +44,6 @@ export const Header = ({
 					contactRef={contactRef}
 				/>
 			</div>
-		</section>
+		</div>
 	);
 };
