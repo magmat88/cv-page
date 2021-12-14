@@ -4,7 +4,7 @@
 
 .about-me-container {
     @extend %marginZero;
-    @extend %paddingMedium;
+    @extend %paddingLarge;
     @extend %paletteMedium;
     @extend %columnCentered;
     font-size: 0.9rem;
@@ -23,7 +23,7 @@
 .about-me-img {
     @extend %rowCentered;
     height: 250px;
-    width: 100%;
+    width: 80%;
 }
 
 .btn-container {
@@ -48,12 +48,18 @@
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-bottom: 10px;
+    color: $color_text-contrast;
+
 }
 
 h3 {
     font-size: 1.1rem;
+    em {
+        @extend %marginMedium;
+        @extend %paletteMediumContrast;
+    }
 }
 
 img {

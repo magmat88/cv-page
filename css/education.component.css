@@ -74,13 +74,12 @@ ul li {
   padding: 10px;
 }
 
-.content-header, .content-text, .education-container, .education-content {
+.content-header, .content-text, .education-content {
   padding: 20px;
 }
 
-.btn-item {
-  background-color: #000d53;
-  color: #d7e2ff;
+.education-container {
+  padding: 40px;
 }
 
 .education-container {
@@ -95,20 +94,8 @@ ul li {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  border: none;
-  text-decoration: none;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+  color: #acacac;
   font-size: 0.9rem;
-}
-
-.btn-item:active {
-  color: #b1c6ff;
-}
-
-.btn-item:hover {
-  color: #ff7300;
-  cursor: pointer;
 }
 
 .content-top-container {
@@ -131,7 +118,7 @@ ul li {
 
 .education-img {
   height: 250px;
-  width: 100%;
+  width: 80%;
 }
 
 .education-items-container {
@@ -184,7 +171,6 @@ img {
 
 p strong {
   color: #3702d6;
-  text-decoration: underline;
 }
 
 ul li {
@@ -192,4 +178,5 @@ ul li {
   width: 100%;
   list-style: none;
   font-size: 0.9rem;
+  border: 1px solid;
 }

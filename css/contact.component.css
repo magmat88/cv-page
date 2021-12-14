@@ -74,8 +74,12 @@ ul li {
   padding: 10px;
 }
 
-.content-header, .content-text, .contact-container, .contact-content {
+.content-header, .content-text, .contact-content {
   padding: 20px;
+}
+
+.contact-container {
+  padding: 40px;
 }
 
 .btn, .btn-item {
@@ -95,15 +99,9 @@ ul li {
 
 .btn {
   border: 1px;
-  padding: 10px;
-  margin: 35px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  padding: 14px;
+  padding: 15px;
   margin: 30px;
-  border: 2px;
+  cursor: pointer;
 }
 
 .btn {
@@ -123,6 +121,7 @@ ul li {
   text-decoration: none;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
+  cursor: pointer;
   font-size: 0.9rem;
 }
 
@@ -155,7 +154,7 @@ ul li {
 
 .contact-img {
   height: 250px;
-  width: 100%;
+  width: 80%;
 }
 
 .contact-item-container {

@@ -93,26 +93,17 @@
     }
 }
 
-@mixin setLinkDark() {
-    @extend %paletteDark;
+@mixin setLinkItem() {
+    background-color: $color_background-grey;
     border: none;
     text-decoration: none;
     transition: color 0.5s;
-  
+
     &:active {
-      color: $color_text-active;
+        color: $color_text-active;
     }
     &:hover {
-      color: $color_text-contrast;
-      cursor: pointer;
+        color: $color_text-contrast;
+        cursor: pointer;
     }
-  }
-
-// @mixin showHide {
-//     .show {
-//         display: block;
-//     }
-//     .hide {
-//         display: none;
-//     }
-// }
+}

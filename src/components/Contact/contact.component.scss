@@ -38,7 +38,7 @@
 .contact-container {
     @extend %columnCentered;
     @extend %paletteLight;
-    @extend %paddingMedium;
+    @extend %paddingLarge;
     @extend %marginZero;
 }
 
@@ -50,7 +50,7 @@
 .contact-img {
     @extend %rowCentered;
     height: 250px;
-    width: 100%;
+    width: 80%;
 }
 
 .contact-item-container {

@@ -6,7 +6,7 @@
     @extend %rowSpaceBetween;
     @extend %marginMedium;
     @include setImageDisplay(5px, auto, 100%);
-    @include setLinkDark;
+    @include setLinkItem;
     font-size: 0.9rem;
 }
 
@@ -33,23 +33,26 @@
     @extend %paletteMedium;
     @extend %paddingMedium;
     @extend %marginZero;
+    
 }
 
 .skills-content {
     @extend %paddingMedium;
-    width: 100%;
+    width: 80%;
 }
 
 .skills-img {
     @extend %rowCentered;
+    @extend %paddingLarge;
     height: 250px;
-    width: 100%;
+    width: 80%;
 }
 
 .skills-item-container {
     @extend %columnSpaceBetween;
     @extend %marginMedium;
-    width: 80%;
+    width: 90%;
+    
     @include forLargeScreens($breakpoint-medium) {
         flex-direction: column;
     }
@@ -88,7 +91,6 @@ p {
 
 p strong {
     color: $color_text-medium;
-    text-decoration: underline;
 }
 
 ul li {
