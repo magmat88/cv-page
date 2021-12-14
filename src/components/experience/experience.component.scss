@@ -13,7 +13,8 @@
     @extend %rowSpaceBetween;
     @extend %marginMedium;
     @include setImageDisplay(5px, auto, 100%);
-    @include setLinkDark;
+    @include setLinkItem;
+    background-color: $color_background-grey;
     font-size: 0.9rem;
 }
 
@@ -46,7 +47,7 @@
 .experience-container {
     @extend %columnCentered;
     @extend %paletteLight;
-    @extend %paddingMedium;
+    @extend %paddingLarge;
     @extend %marginZero;
 }
 
@@ -58,13 +59,14 @@
 .experience-img {
     @extend %rowCentered;
     height: 250px;
-    width: 100%;
+    width: 80%;
 }
 
 .experience-items-container {
     @extend %columnSpaceBetween;
     @extend %marginMedium;
     width: 80%;
+
     @include forLargeScreens($breakpoint-medium) {
         flex-direction: column;
     }
@@ -118,7 +120,6 @@ p {
 
 p strong {
     color: $color_text-medium;
-    text-decoration: underline;
 }
 
 .project-container {

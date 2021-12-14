@@ -1,7 +1,6 @@
 import aboutMeImg from "../../images/aboutMe/aboutMeImg.jpg";
 import { AboutMeProps } from "../../modules/content/content.state";
 import "./aboutMe.component.scss";
-// import {ReactComponent as GithubLogo} from "../../icons/githubIcon.svg";
 
 export const AboutMe = ({
 	index,
@@ -23,21 +22,21 @@ export const AboutMe = ({
 						<em>Frontend Developer</em>
 					</h3>
 				</div>
-				
+
 				<div className="content-text">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu
-						fugiat nulla pariatur.
+						For last year intensively improved skills of web design
+						and web development.
+					</p>
+
+					<p>Currently working on her own React/ TypeScript projects and </p>
+					<p>
+						Passionate ready to start working with issues that bring
+						her a lot of satisfaction.
 					</p>
 				</div>
 				<div className="btn-container">
 					<button className="btn" onClick={() => window.open(github)}>
-						{/* <GithubLogo /> */}
 						Github
 					</button>
 					<button

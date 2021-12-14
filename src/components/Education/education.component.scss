@@ -6,7 +6,8 @@
     @extend %rowSpaceBetween;
     @extend %marginMedium;
     @include setImageDisplay(5px, auto, 100%);
-    @include setLinkDark;
+    // @include setLinkItem;
+    color: $color_background-grey;
     font-size: 0.9rem;
 }
 
@@ -31,7 +32,7 @@
 .education-container {
     @extend %columnCentered;
     @extend %paletteMedium;
-    @extend %paddingMedium;
+    @extend %paddingLarge;
     @extend %marginZero;
 }
 
@@ -43,7 +44,7 @@
 .education-img {
     @extend %rowCentered;
     height: 250px;
-    width: 100%;
+    width: 80%;
 }
 
 .education-items-container {
@@ -91,7 +92,6 @@ p {
 
 p strong {
     color: $color_text-medium;
-    text-decoration: underline;
 }
 
 ul li {
@@ -100,4 +100,5 @@ ul li {
     width: 100%;
     list-style: none;
     font-size: 0.9rem;
+    border: 1px solid;
 }

@@ -1,7 +1,7 @@
-import "./header.component.scss";
 import { useState } from "react";
 import { NavBar } from "./navBar.component";
 import { HeaderProps } from "../../modules/content/content.state";
+import "./header.component.scss";
 
 export const Header = ({
 	aboutMeRef,

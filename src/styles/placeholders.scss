@@ -74,6 +74,10 @@
     background-color: $color_background-medium-light;
     color: $color_text-dark;
 }
+%paletteMediumContrast {
+    background-color: $color_background-medium-light;
+    color: $color_text-contrast;
+}
 
 %shadowEffect {
     box-shadow: 5px 5px 10px $color_shadow;
@@ -82,14 +86,11 @@
 %buttonEffect {
     border: 1px;
     @extend %paletteDark;
-    padding: 10px;
-    margin: 35px;
+    padding: 15px;
+    margin: 30px;
     cursor: pointer;
-    
+
     &:hover {
-        padding: 14px;
         @extend %paletteDarkContrast;
-        margin: 30px;
-        border: 2px;
     }
 }

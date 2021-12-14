@@ -34,12 +34,20 @@
   margin: 0px;
 }
 
+h3 em {
+  margin: 20px;
+}
+
 .btn-container {
   padding: 0px;
 }
 
-.about-me-container, .about-me-content, .content-header, .content-text {
+.about-me-content, .content-header, .content-text {
   padding: 20px;
+}
+
+.about-me-container {
+  padding: 40px;
 }
 
 .btn {
@@ -57,17 +65,16 @@
   color: #000d53;
 }
 
-.btn {
-  border: 1px;
-  padding: 10px;
-  margin: 35px;
-  cursor: pointer;
+h3 em {
+  background-color: #b1c6ff;
+  color: #ff7300;
 }
 
-.btn:hover {
-  padding: 14px;
+.btn {
+  border: 1px;
+  padding: 15px;
   margin: 30px;
-  border: 2px;
+  cursor: pointer;
 }
 
 .about-me-container {
@@ -90,7 +97,7 @@
 
 .about-me-img {
   height: 250px;
-  width: 100%;
+  width: 80%;
 }
 
 .btn {
@@ -100,8 +107,9 @@
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   padding-bottom: 10px;
+  color: #ff7300;
 }
 
 h3 {

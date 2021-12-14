@@ -48,13 +48,10 @@ export const Contact = ({ title, index, contactRef, email }: ContactProps) => {
 					</div>
 					<div className="content-text">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit, sed do eiusmod tempor incididunt ut labore et
-							dolore magna aliqua. Ut enim ad minim veniam, quis
-							nostrud exercitation ullamco laboris nisi ut aliquip
-							ex ea commodo consequat. Duis aute irure dolor in
-							reprehenderit in voluptate velit esse cillum dolore
-							eu fugiat nulla pariatur.
+							If you have any questions about my skills,
+							experience or current projects, do not hesitate to contact me.
+
+							I am looking for new oportunities and ready for new challenges.
 						</p>
 					</div>
 				</div>

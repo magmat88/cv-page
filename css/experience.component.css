@@ -75,11 +75,15 @@
   padding: 10px;
 }
 
-.content-header, .content-text, .experience-container, .experience-content {
+.content-header, .content-text, .experience-content {
   padding: 20px;
 }
 
-.btn, .btn-item {
+.experience-container {
+  padding: 40px;
+}
+
+.btn {
   background-color: #000d53;
   color: #d7e2ff;
 }
@@ -96,15 +100,9 @@
 
 .btn {
   border: 1px;
-  padding: 10px;
-  margin: 35px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  padding: 14px;
+  padding: 15px;
   margin: 30px;
-  border: 2px;
+  cursor: pointer;
 }
 
 .btn {
@@ -120,10 +118,12 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  background-color: #acacac;
   border: none;
   text-decoration: none;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
+  background-color: #acacac;
   font-size: 0.9rem;
 }
 
@@ -156,7 +156,7 @@
 
 .experience-img {
   height: 250px;
-  width: 100%;
+  width: 80%;
 }
 
 .experience-items-container {
@@ -223,7 +223,6 @@ img {
 
 p strong {
   color: #3702d6;
-  text-decoration: underline;
 }
 
 ul li {
