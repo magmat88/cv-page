@@ -2,33 +2,136 @@
 @import "../../styles/placeholders.scss";
 @import "../../styles/variables/variables.scss";
 
-.styledHeader {
-    @extend %columnCentered;
-    @extend %paletteDark;
-    @extend %paddingSmall;
-    // height: 100%;
+.for-medium-screens {
+    padding-right: 10px;
+}
+
+.hamburger-icon {
+    @include setHamburgerIconAnimate($hamburgerBarSpacing);
+}
+
+.hamburger-icon,
+.hamburger-icon:after,
+.hamburger-icon:before {
+    @include setHamburgerIconSize($hamburgerBarWidth, $hamburgerBarHeight, 10px);
+}
+
+.hamburger-icon-container {
+    @include setHamburgerContainerDisplay($hamburgerBarWidth, $hamburgerBarHeight, $hamburgerBarSpacing);
+    @extend %marginMedium;
 
     @include forLargeScreens($breakpoint-medium) {
-        height: 170px;
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        z-index: 10;
+        display: none;
     }
 }
 
-
-
-.navItem,
-.navigation-item {
+.header-container {
     @extend %columnLeft;
-    width: 100%; 
+    @extend %paletteDark;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+
+    @include forLargeScreens($breakpoint-medium) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.header-logo-and-icon-container {
+    @extend %rowCentered;
+    justify-content: space-between;
+    width: 100%;
+
+    @include forLargeScreens($breakpoint-medium) {
+        width: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.hiddenIfMobile {
+    display: none;
+
+    @include forLargeScreens($breakpoint-medium) {
+        display: flex;
+    }
+}
+
+.navigation-container {
+    @extend %columnLeft;
+    @extend %paletteDark;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+    @include forLargeScreens($breakpoint-medium) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.navbar-container {
+    @extend %columnLeft;
+    width: 100%;
+
+    @include forLargeScreens($breakpoint-medium) {
+        width: auto;
+    }
+}
+
+.navigation-list {
+    @extend %columnCentered;
+    width: 100%;
 
     @include forLargeScreens($breakpoint-medium) {
         flex-direction: row;
         justify-content: flex-end;
-        width: 100%;
     }
+}
+
+.product-name-container {
+    margin-right: 10px;
+}
+
+.visible {
+    display: flex;
+}
+
+a,
+button {
+    @extend %paddingMedium;
+    @include setLinkDark;
+
+    @include forLargeScreens($breakpoint-medium) {
+        padding: 10px;
+    }
+}
+
+li {
+    @extend %paddingStandard;
+    border: 1px solid $color_light;
+    display: flex;
+    width: 100%;
+
+    @include forLargeScreens($breakpoint-medium) {
+        border: none;
+        padding: 0;
+        width: auto;
+    }
+}
+
+p {
+    cursor: default;
+}
+
+svg {
+    color: $color_light;
+}
+
+ul {
+    @extend %paddingZero;
+    list-style-type: none;
 }
 
 .navBtn {
@@ -46,29 +149,4 @@
         color: none;
         width: auto;
     }
-}
-
-.headerItem {
-    @extend %rowSpaceBetween;
-    width: 100%;
-}
-
-.nameItem {
-    @extend %columnCentered;
-    @extend %paddingMedium;
-    width: 80%;
-    h2 {
-        @extend %rowCentered;
-        font-size: 1em;
-        color: $color_contrast;
-    }
-    p {
-        @extend %rowCentered;
-        font-size: 0.9em;
-        color: $color_medium-light;
-    }
-}
-
-.cvBtn {
-    @extend %columnCentered;
 }

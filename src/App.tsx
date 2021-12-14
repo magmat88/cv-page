@@ -116,7 +116,7 @@ function App() {
 				}
 			})}
 		</main>
-			<Footer aboutPage={"text about page"} author={"magmat88"} />
+			<Footer aboutPage={"My portfolio CV page made with React and TypeScript."} author={"magmat88"} />
 		</div>
 	);
 }

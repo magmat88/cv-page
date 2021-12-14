@@ -11,7 +11,7 @@ export const NavBar = ({
 	components
 }: NavBarProps) => {
 	return (
-		<section className="navItem">
+		<section className="navigation-list">
 			<button
 				className="navBtn"
 				onClick={() => {
