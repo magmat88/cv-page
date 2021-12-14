@@ -1,4 +1,5 @@
 import "../../App.scss";
+import { useState } from "react";
 import { NavBarProps } from "../../modules/content/content.state";
 
 export const NavBar = ({
@@ -10,12 +11,17 @@ export const NavBar = ({
 	contactRef,
 	components
 }: NavBarProps) => {
+	const [isMenuVisible, setMenuVisible] = useState(false);
+	const onClickHandler = () => setMenuVisible(!isMenuVisible);
+	const menuVisibilityClass = isMenuVisible ? "hiddenIfMobile" : "visible";
+
 	return (
-		<section className="navigation-list">
+		<section className={`navigation-list ${menuVisibilityClass}`}>
 			<button
 				className="navBtn"
 				onClick={() => {
 					aboutMeRef.current.scrollIntoView();
+					onClickHandler();
 				}}
 			>
 				About me
@@ -24,6 +30,7 @@ export const NavBar = ({
 				className="navBtn"
 				onClick={() => {
 					objectiveRef.current.scrollIntoView();
+					onClickHandler();
 				}}
 			>
 				Objective
@@ -32,6 +39,7 @@ export const NavBar = ({
 				className="navBtn"
 				onClick={() => {
 					educationRef.current.scrollIntoView();
+					onClickHandler();
 				}}
 			>
 				Education
@@ -40,6 +48,7 @@ export const NavBar = ({
 				className="navBtn"
 				onClick={() => {
 					experienceRef.current.scrollIntoView();
+					onClickHandler();
 				}}
 			>
 				Work experience
@@ -48,6 +57,7 @@ export const NavBar = ({
 				className="navBtn"
 				onClick={() => {
 					skillsRef.current.scrollIntoView();
+					onClickHandler();
 				}}
 			>
 				Skills
@@ -56,6 +66,7 @@ export const NavBar = ({
 				className="navBtn"
 				onClick={() => {
 					contactRef.current.scrollIntoView();
+					onClickHandler();
 				}}
 			>
 				Contact

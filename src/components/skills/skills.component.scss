@@ -31,19 +31,18 @@
 .skills-container {
     @extend %columnCentered;
     @extend %paletteMedium;
-    @extend %paddingMedium;
+    @extend %paddingLarge;
     @extend %marginZero;
     border: 2px solid $color_dark;    
 }
 
 .skills-content {
     @extend %paddingMedium;
-    width: 80%;
+    width: 100%;
 }
 
 .skills-img {
     @extend %rowCentered;
-    @extend %paddingLarge;
     height: 250px;
     width: 80%;
 }
@@ -51,7 +50,7 @@
 .skills-item-container {
     @extend %columnSpaceBetween;
     @extend %marginMedium;
-    width: 90%;
+    width: 80%;
     
     @include forLargeScreens($breakpoint-medium) {
         flex-direction: column;
@@ -96,7 +95,9 @@ p strong {
 ul li {
     @extend %paddingStandard;
     margin: 10px 0 0 40px;
-    width: 80%;
+    width: 100%;
     list-style: circle;
     font-size: 0.9rem;
+    border: 1px solid;
+
 }

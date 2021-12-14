@@ -28,9 +28,13 @@
 }
 
 .btn-container {
-    @extend %rowCentered;
+    @extend %columnCentered;
     @extend %marginZero;
     @extend %paddingZero;
+
+    @include forLargeScreens($breakpoint-medium) {
+        flex-direction: row;
+    }
 }
 
 .btn {

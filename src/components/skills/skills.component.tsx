@@ -41,7 +41,7 @@ export const Skills = ({ title, index, skillsRef, skills }: SkillsProps) => {
 						</p>
 						<p>Uses GIT distributed version-control system.</p>
 						<p>Uses Lean Management Tools in problem solving.</p>
-						<p>Open to learning new issues.</p>
+						<p>Open to learning new skills.</p>
 					</div>
 				</div>
 				<figure className="skills-img">
