@@ -19,7 +19,7 @@ export const AboutMe = ({
 				<div className="content-header">
 					<h1>Magdalena Matusiak</h1>
 					<h3>
-						<em>Frontend Developer</em>
+						<em>Front-end Developer</em>
 					</h3>
 				</div>
 
@@ -29,7 +29,12 @@ export const AboutMe = ({
 						and web development.
 					</p>
 
-					<p>Currently working on her own React/ TypeScript projects and </p>
+					<p>
+						Currently working on her own React/ TypeScript projects
+						and on two-person React/ TypeScript project. Using both
+						individual and pair programming to learn best practices.
+						
+					</p>
 					<p>
 						Passionate ready to start working with issues that bring
 						her a lot of satisfaction.
@@ -49,7 +54,7 @@ export const AboutMe = ({
 						className="btn"
 						onClick={() => window.open(linkToCV)}
 					>
-						{"↓ My CV"}
+						{"My CV"}
 					</button>
 				</div>
 			</div>

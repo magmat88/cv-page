@@ -121,7 +121,6 @@ ul li {
   text-decoration: none;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
-  cursor: pointer;
   font-size: 0.9rem;
 }
 
@@ -146,6 +145,10 @@ ul li {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.contact-container {
+  border: 2px solid #000d53;
 }
 
 .contact-content {
@@ -202,7 +205,7 @@ img {
 }
 
 p strong {
-  color: #3702d6;
+  color: #444444;
   text-decoration: underline;
 }
 

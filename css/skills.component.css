@@ -82,6 +82,11 @@ ul li {
   padding: 40px;
 }
 
+.btn-item {
+  background-color: #000d53;
+  color: #d7e2ff;
+}
+
 .skills-container {
   background-color: #b1c6ff;
   color: #000d53;
@@ -94,7 +99,6 @@ ul li {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  background-color: #acacac;
   border: none;
   text-decoration: none;
   -webkit-transition: color 0.5s;
@@ -123,6 +127,10 @@ ul li {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.skills-container {
+  border: 2px solid #000d53;
 }
 
 .skills-content {
@@ -179,12 +187,12 @@ img {
 }
 
 p strong {
-  color: #3702d6;
+  color: #444444;
 }
 
 ul li {
   margin: 10px 0 0 40px;
-  width: 100%;
+  width: 80%;
   list-style: circle;
   font-size: 0.9rem;
 }

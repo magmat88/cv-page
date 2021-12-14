@@ -6,8 +6,7 @@
     @extend %rowSpaceBetween;
     @extend %marginMedium;
     @include setImageDisplay(5px, auto, 100%);
-    // @include setLinkItem;
-    color: $color_background-grey;
+    @include setLinkItem;
     font-size: 0.9rem;
 }
 
@@ -34,6 +33,7 @@
     @extend %paletteMedium;
     @extend %paddingLarge;
     @extend %marginZero;
+    border: 2px solid $color_dark;
 }
 
 .education-content {

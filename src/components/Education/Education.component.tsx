@@ -93,14 +93,13 @@ export const Education = ({
 					</div>
 					<div className="content-text">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit, sed do eiusmod tempor incididunt ut labore et
-							dolore magna aliqua. Ut enim ad minim veniam, quis
-							nostrud exercitation ullamco laboris nisi ut aliquip
-							ex ea commodo consequat. Duis aute irure dolor in
-							reprehenderit in voluptate velit esse cillum dolore
-							eu fugiat nulla pariatur.
+							Graduated Wroclaw University of Technology with honors.
 						</p>
+						<p>Learns programming on her own, uses a variety of available resources 
+							such as FreeCodeCamp, Codecademy, Udemy courses.</p>
+						<p>Willingly broadens her horizons. Likes learning new things. 
+							Is not afraid to take on difficult challenges. 
+							Solves problems by working with documentation.</p>
 					</div>
 				</div>
 				<figure className="education-img">

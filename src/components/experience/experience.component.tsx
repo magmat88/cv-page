@@ -56,13 +56,13 @@ export const Work = ({
 						return <li>{responsibility}</li>;
 					})}
 				</ul>
-				<figure>
+				{/* <figure>
 					<img
 						className="logo-img"
 						src={companyLogo}
 						alt="company-logo"
 					/>
-				</figure>
+				</figure> */}
 			</div>
 			<button
 				className="btn-item"
@@ -88,19 +88,17 @@ export const Work = ({
 
 export const Projects = ({ projects }: ProjectsProps) => {
 	return (
-		<div>
+		<div className="btns-container">
 			{projects.map((project: Project) => {
 				return (
 					<div className="project-container">
-						<h4>{project.projectName}</h4>
-						<p>{project.extraInformation}</p>
-
 						<button
 							className="btn"
 							onClick={() => window.open(project.projectLink)}
 						>
-							Link to {project.projectName}
+							{project.projectName}
 						</button>
+						<p>{project.extraInformation}</p>
 
 						<div className="project-logo">
 							{project.projectLogo && (
@@ -153,13 +151,22 @@ export const Experience = ({
 					</div>
 					<div className="content-text">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit, sed do eiusmod tempor incididunt ut labore et
-							dolore magna aliqua. Ut enim ad minim veniam, quis
-							nostrud exercitation ullamco laboris nisi ut aliquip
-							ex ea commodo consequat. Duis aute irure dolor in
-							reprehenderit in voluptate velit esse cillum dolore
-							eu fugiat nulla pariatur.
+							Experienced as Analytical Chemist. Convinced that
+							earned skills and expertise from her previous
+							proffesion are fully transferable into the new one.
+						</p>
+						<p>
+							Very good listener and responsible co-worker.
+							Focuses on what the team needs the most.
+						</p>
+						<p>
+							Gets satisfaction when implementing new solutions.
+							Focused on continuous improvement.
+						</p>
+						<p>
+							Learns programming on her own, uses a variety of
+							available resources such as FreeCodeCamp,
+							Codecademy, Udemy courses.
 						</p>
 					</div>
 				</div>

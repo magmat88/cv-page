@@ -33,7 +33,7 @@
     @extend %paletteMedium;
     @extend %paddingMedium;
     @extend %marginZero;
-    
+    border: 2px solid $color_dark;    
 }
 
 .skills-content {
@@ -96,7 +96,7 @@ p strong {
 ul li {
     @extend %paddingStandard;
     margin: 10px 0 0 40px;
-    width: 100%;
+    width: 80%;
     list-style: circle;
     font-size: 0.9rem;
 }

@@ -18,6 +18,10 @@
     font-size: 0.9rem;
 }
 
+.btns-container {
+    @extend %rowCentered;
+}
+
 .content-and-image-container {
     @extend %rowSpaceBetween;
 
@@ -49,6 +53,7 @@
     @extend %paletteLight;
     @extend %paddingLarge;
     @extend %marginZero;
+    border: 2px solid $color_dark;
 }
 
 .experience-content {

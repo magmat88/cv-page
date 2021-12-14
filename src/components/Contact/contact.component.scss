@@ -13,7 +13,7 @@
     @extend %rowSpaceBetween;
     @extend %marginMedium;
     @include setImageDisplay(5px, auto, 100%);
-    @include setLinkDark;
+    @include setLinkItem;
     font-size: 0.9rem;
 }
 
@@ -40,6 +40,8 @@
     @extend %paletteLight;
     @extend %paddingLarge;
     @extend %marginZero;
+    border: 2px solid $color_dark;
+
 }
 
 .contact-content {

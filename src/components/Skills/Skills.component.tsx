@@ -37,14 +37,11 @@ export const Skills = ({ title, index, skillsRef, skills }: SkillsProps) => {
 					</div>
 					<div className="content-text">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit, sed do eiusmod tempor incididunt ut labore et
-							dolore magna aliqua. Ut enim ad minim veniam, quis
-							nostrud exercitation ullamco laboris nisi ut aliquip
-							ex ea commodo consequat. Duis aute irure dolor in
-							reprehenderit in voluptate velit esse cillum dolore
-							eu fugiat nulla pariatur.
+							With solid JavaScript Fundamentals. Currently improving skills in ReactJS and TypeScript.
 						</p>
+						<p>Uses GIT distributed version-control system.</p>
+						<p>Uses Lean Management Tools in problem solving.</p>
+						<p>Open to learning new issues.</p>
 					</div>
 				</div>
 				<figure className="skills-img">

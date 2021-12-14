@@ -5,6 +5,7 @@
 .footer-container {
     @extend %columnCentered;
     @extend %paletteDark;
+    font-size: 0.9rem;
 
     @include forLargeScreens($breakpoint-medium) {
         flex-direction: row;

@@ -48,10 +48,12 @@ export interface ContactProps {
 	index: number;
 	contactRef: any;
 	email: string;
+	linkedIn: string;
 }
 
 export interface ContactWaysProps {
 	email: string;
+	linkedIn: string;
 }
 
 export interface EducationProps {
