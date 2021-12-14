@@ -9,6 +9,7 @@
     @extend %columnCentered;
     font-size: 0.9rem;
     width: 100%;
+    border: 2px solid $color_dark;
 
     @include forLargeScreens($breakpoint-medium) {
         flex-direction: row;

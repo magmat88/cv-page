@@ -94,7 +94,7 @@
 }
 
 @mixin setLinkItem() {
-    background-color: $color_background-grey;
+    @extend %paletteDark;
     border: none;
     text-decoration: none;
     transition: color 0.5s;

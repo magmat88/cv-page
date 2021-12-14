@@ -6,30 +6,37 @@ import {
 	ContactWaysProps,
 } from "../../modules/content/content.state";
 
-export const ContactWays = ({ email }: ContactWaysProps) => {
+export const ContactWays = ({ email, linkedIn }: ContactWaysProps) => {
 	return (
 		<div className="item-container">
 			<p>
 				<strong>Ways of contact:</strong>
 			</p>
-			<ul>
-				<li>
-					<button
-						className="btn"
-						onClick={(e) => {
-							window.location.href = `mailto:${email}`;
-							e.preventDefault();
-						}}
-					>
-						Email
-					</button>
-				</li>
-			</ul>
+			<div className="btns-container">
+				<button
+					className="btn"
+					onClick={(e) => {
+						window.location.href = `mailto:${email}`;
+						e.preventDefault();
+					}}
+				>
+					Email
+				</button>
+				<button className="btn" onClick={() => window.open(linkedIn)}>
+					LinkedIn
+				</button>
+			</div>
 		</div>
 	);
 };
 
-export const Contact = ({ title, index, contactRef, email }: ContactProps) => {
+export const Contact = ({
+	title,
+	index,
+	contactRef,
+	email,
+	linkedIn,
+}: ContactProps) => {
 	const [waysOfContactVisible, setWaysOfContactVisible] = useState(false);
 
 	return (
@@ -49,9 +56,9 @@ export const Contact = ({ title, index, contactRef, email }: ContactProps) => {
 					<div className="content-text">
 						<p>
 							If you have any questions about my skills,
-							experience or current projects, do not hesitate to contact me.
-
-							I am looking for new oportunities and ready for new challenges.
+							experience or current projects, do not hesitate to
+							contact me. I am looking for new oportunities and
+							ready for new challenges.
 						</p>
 					</div>
 				</div>
@@ -68,7 +75,7 @@ export const Contact = ({ title, index, contactRef, email }: ContactProps) => {
 					<p>{waysOfContactVisible ? "-" : "+"}</p>
 				</button>
 				<div className={waysOfContactVisible ? "show" : "hide"}>
-					<ContactWays email={email} />
+					<ContactWays email={email} linkedIn={linkedIn} />
 				</div>
 			</div>
 		</section>

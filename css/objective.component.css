@@ -48,6 +48,7 @@
 }
 
 .objective-container {
+  border: 2px solid #000d53;
   font-size: 0.9rem;
   width: 100%;
 }

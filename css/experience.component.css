@@ -31,7 +31,7 @@
           justify-content: space-between;
 }
 
-.experience-img, .logo-img {
+.btns-container, .experience-img, .logo-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,7 +83,7 @@
   padding: 40px;
 }
 
-.btn {
+.btn, .btn-item {
   background-color: #000d53;
   color: #d7e2ff;
 }
@@ -118,12 +118,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  background-color: #acacac;
   border: none;
   text-decoration: none;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
-  background-color: #acacac;
+  background-color: #d7e2ff;
   font-size: 0.9rem;
 }
 
@@ -148,6 +147,10 @@
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
+}
+
+.experience-container {
+  border: 2px solid #000d53;
 }
 
 .experience-content {
@@ -222,7 +225,7 @@ img {
 }
 
 p strong {
-  color: #3702d6;
+  color: #444444;
 }
 
 ul li {
